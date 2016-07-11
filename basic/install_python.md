@@ -1,4 +1,4 @@
-
+### CentOS install python 2.7
 yum -y install python-devel readline-devel xz wget openssl-devel zlib-devel gcc gcc-c++ make
 cd /usr/local/src
 wget https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tar.xz
