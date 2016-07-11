@@ -19,6 +19,16 @@ Python 2.6.6
 # ln -s /usr/local/python27/bin/python /usr/bin/
 # sed -i '/#!/ s/python$/python2.6/g' /usr/bin/yum
 
-# echo "PATH=/usr/local/python27/bin:\$PATH" > /etc/profile.d/python.sh
+# echo "PATH=/usr/local/python27/bin:\$PATH" > /etc/profile.d/python2.7.sh
 # source /etc/profile
+
+# python -V
+Python 2.7.11
+
+# python
+Python 2.7.11 (default, Jul 11 2016, 19:15:36) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-17)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "hello world."
+hello world.
 ```
