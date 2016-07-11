@@ -1,7 +1,7 @@
 # Python Outline
 - 基础
-    -  [xxxx](https://x.x/x/python2.7)
-    -  [xxxx](https://x.x/x/python2.7)
+    -  [install python2.7](https://x.x/x/python2.7)
+    -  [install pip](https://x.x/x/python2.7)
 
 - - -
 
@@ -18,11 +18,5 @@
 - - -
 
 - 高级网络编程
-    -  [xxxx](https://x.x/x/python2.7)
-    -  [xxxx](https://x.x/x/python2.7)
-
-- - -
-
-- 工具开发
     -  [xxxx](https://x.x/x/python2.7)
     -  [xxxx](https://x.x/x/python2.7)
