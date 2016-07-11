@@ -1,10 +1,23 @@
 # Python Outline
-- 分类1
+- 基础
     -  [xxxx](https://x.x/x/python2.7)
     -  [xxxx](https://x.x/x/python2.7)
 
 - - -
 
-- 分类2
+- 模块
+    -  [xxxx](https://x.x/x/python2.7)
+    -  [xxxx](https://x.x/x/python2.7)
+
+
+- - -
+
+- 高级网络编程
+    -  [xxxx](https://x.x/x/python2.7)
+    -  [xxxx](https://x.x/x/python2.7)
+
+- - -
+
+- 工具开发
     -  [xxxx](https://x.x/x/python2.7)
     -  [xxxx](https://x.x/x/python2.7)
