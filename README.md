@@ -6,11 +6,14 @@
 - - -
 
 - 模块
-    -  os 
+    - os 
         - [os.wait](https://x.x/x/python2.7)
         - [os.wait](https://x.x/x/python2.7)
         - [os.wait](https://x.x/x/python2.7)
-    -  [xxxx](https://x.x/x/python2.7)
+    - time 
+        - [os.wait](https://x.x/x/python2.7)
+        - [os.wait](https://x.x/x/python2.7)
+        - [os.wait](https://x.x/x/python2.7)
 
 - - -
 
