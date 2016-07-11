@@ -1,4 +1,4 @@
-### Install pip 
+### 安装pip软件包
 ```
 # wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 or
