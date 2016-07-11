@@ -6,7 +6,7 @@
 
 - - -
 
-- 模块
+- 内置模块
     - os 
         - [os.wait](https://x.x/x/python2.7)
         - [os.wait](https://x.x/x/python2.7)
@@ -15,6 +15,11 @@
         - [os.wait](https://x.x/x/python2.7)
         - [os.wait](https://x.x/x/python2.7)
         - [os.wait](https://x.x/x/python2.7)
+
+- - -
+
+- 第三方模块
+    - psutil(https://xxxx/)
 
 - - -
 
