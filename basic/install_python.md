@@ -1,4 +1,4 @@
-### Install Python 2.7
+### Python版本升级 2.6到2.7
 ```
 # yum -y install python-devel readline-devel xz wget openssl-devel zlib-devel gcc gcc-c++ make
 
@@ -17,5 +17,4 @@
 
 # echo "PATH=/usr/local/python27/bin:\$PATH" > /etc/profile.d/python.sh
 # source /etc/profile
-
 ```
