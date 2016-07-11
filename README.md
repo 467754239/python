@@ -20,7 +20,7 @@
     -  [类](https://xxxx)
     -  [实现switch](https://xxxx)
     -  [时间复杂度](https://xxxx)
-    -  [__name与__main__](https://xxxx)
+    -  [__name__与__main__](https://xxxx)
     -  [导入模块](https://xxxx)
     -  [包](https://xxxx)
     -  [讲述pyc文件](https://xxxx)
