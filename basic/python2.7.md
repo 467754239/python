@@ -1,12 +1,8 @@
 ## Python版本升级 2.6到2.7
-#### 当前python版本
 ```
 # python -V
 Python 2.6.6
-```
 
-#### 升级到python2.7版本
-```
 # yum install gcc gcc-c++ make wget xz wget readline-devel
 # yum install python-devel openssl-devel zlib-devel
 
