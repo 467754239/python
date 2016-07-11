@@ -1,8 +1,9 @@
 # Python Outline
 - 基础
     -  [python2.7](https://github.com/467754239/python/blob/master/basic/install_python.md)
-    -  [pip](https://x.x/x/python2.7)
-    -  [virtualenv](https://x.x/x/python2.7)
+    -  [pip](https://xxxx)
+    -  [ipython](https://xxxx)
+    -  [virtualenv](https://xxxx)
 
 - - -
 
