@@ -29,11 +29,6 @@
     -  [hasattr与getattr](https://xxxx)
     -  [buffer与cache](https://xxxx)
     -  [cookie与session](https://xxxx)
-    -  [map/reduce思想](https://xxxx)
-    -  [](https://xxxx)
-    -  [](https://xxxx)
-    -  [](https://xxxx)
-    -  [](https://xxxx)
 	
 
 - - -
