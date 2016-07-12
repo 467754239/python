@@ -22,15 +22,14 @@
     -  [时间复杂度](https://xxxx)
     -  [导入模块](https://xxxx)
     -  [包](https://xxxx)
-    -  [讲述pyc文件](https://xxxx)
+    -  [pyc文件](https://xxxx)
+    -  [#!](https://xxxx)
     -  [urllib/urllib2/request](https://xxxx)
     -  [正则表达式](https://xxxx)
     -  [http](https://xxxx)
     -  [name与main](https://xxxx)
     -  [range与xrange](https://xxxx)
     -  [hasattr与getattr](https://xxxx)
-    -  [buffer与cache](https://xxxx)
-    -  [cookie与session](https://xxxx)
 	
 
 - - -
@@ -48,12 +47,18 @@
 
 - - -
 
+- 网络
+    -  [buffer与cache](https://xxxx)
+    -  [cookie与session](https://xxxx)
+
+- - -
+
 - 多线程、多进程及协成 
     -  [xxxx](https://x.x/x/python2.7)
 
 - - -
 
-- 高级网络编程
+- 高级网络编程socket
     -  [xxxx](https://x.x/x/python2.7)
     -  [xxxx](https://x.x/x/python2.7)
 
@@ -66,7 +71,7 @@
 
 - - -
 
-- 思想 
+- 大数据思想 
     -  [map与reduce](https://xxxxx)
 
 - - -
