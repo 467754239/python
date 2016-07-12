@@ -43,8 +43,8 @@
 - - -
 
 - 第三方模块
-    - psutil(https://xxxx/)
-    - MySQLdb(https://xxxx/)
+    - [psutil](https://xxxxx)
+    - [MySQLdb](https://xxxxx)
 
 - - -
 
