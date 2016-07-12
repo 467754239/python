@@ -18,7 +18,6 @@ class Th(threading.Thread):
         time.sleep(1)
         print 'child thread %s is over' % self.threadName
 
-
 if __name__ == '__main__':
     thread1 = Th('thread1')
     thread1.start()
@@ -71,6 +70,9 @@ main thread is over
 import threading
 
 class Th(object):
+    def __init__(self):
+	pass
+
     def process(self, N):
         print 'Th is start.'
         print range(N)
