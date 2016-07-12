@@ -46,7 +46,7 @@
     -  cookie与session
 
 - 多线程、多进程及协成 
-    -  [原理多线程](https://github.com/467754239/python/blob/master/threading_doc.md)
+    -  [原理多线程](https://github.com/467754239/python/blob/master/threads/threading_doc.md)
     -  [实战thread](https://github.com/467754239/python/blob/master/threads/thread.md)
     -  [实战threading](https://github.com/467754239/python/blob/master/threads/threading.md)
     -  xxx
