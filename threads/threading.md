@@ -33,8 +33,6 @@ child thread thread1 is over
 main thread is over
 ```
 
-
-
 ## threading 多线程示例2
 > 执行代码   
 
@@ -93,3 +91,6 @@ Th is start.
 Th is end.
 main thread is over
 ```
+- - -
+## 介绍threading模块
+
