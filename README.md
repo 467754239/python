@@ -1,5 +1,5 @@
 ## Python Outline
-> 近期笔记整理  
+> 上传中 ......
 
 - 基础
     -  [python2.7](https://github.com/467754239/python/blob/master/basic/python2.7.md)
@@ -52,8 +52,8 @@
     -  xxx
 
 - 高级网络编程socket
-    -  xxxx
-    -  xxxx
+    -  [网络编程原理]
+    -  [socket]
 
 - 算法 
     -  快排
