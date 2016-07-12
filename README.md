@@ -37,42 +37,34 @@
         - os.wait
     - imp
 
-- - -
 
 - 第三方模块
     - psutil
     - MySQLdb
 
-- - -
 
 - 网络
     -  buffer与cache
     -  cookie与session
 
-- - -
 
 - 多线程、多进程及协成 
     -  xxxx
 
-- - -
 
 - 高级网络编程socket
     -  xxxx
     -  xxxx
 
-- - -
 
 - 算法 
     -  快排
     -  冒泡
     -  求一个list最大的两个值
 
-- - -
 
 - 大数据思想 
     -  map与reduce
-
-- - -
 
 - 数据结构
     -  队列
