@@ -36,48 +36,48 @@
 
 - 内置模块
     - os 
-        - [os.wait](https://x.x/x/python2.7)
-    - [imp](http://xxxxx)
+        - os.wait
+    - imp
 
 - - -
 
 - 第三方模块
-    - [psutil](https://xxxxx)
-    - [MySQLdb](https://xxxxx)
+    - psutil
+    - MySQLdb
 
 - - -
 
 - 网络
-    -  [buffer与cache](https://xxxx)
-    -  [cookie与session](https://xxxx)
+    -  buffer与cache
+    -  cookie与session
 
 - - -
 
 - 多线程、多进程及协成 
-    -  [xxxx](https://x.x/x/python2.7)
+    -  xxxx
 
 - - -
 
 - 高级网络编程socket
-    -  [xxxx](https://x.x/x/python2.7)
-    -  [xxxx](https://x.x/x/python2.7)
+    -  xxxx
+    -  xxxx
 
 - - -
 
 - 算法 
-    -  [快排](https://xxxxx)
-    -  [冒泡](https://xxxxx)
-    -  [求一个list最大的两个值](https://xxxxx)
+    -  快排
+    -  冒泡
+    -  求一个list最大的两个值
 
 - - -
 
 - 大数据思想 
-    -  [map与reduce](https://xxxxx)
+    -  map与reduce
 
 - - -
 
 - 数据结构
-    -  [队列](https://xxxxx)
-    -  [栈](https://xxxxx)
-    -  [树](https://xxxxx)
-    -  [图](https://xxxxx)
+    -  队列
+    -  栈
+    -  树
+    -  图
