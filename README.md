@@ -44,6 +44,10 @@
     -  cookie与session
 
 - 多线程、多进程及协成 
+    > 原理
+
+    > 实战
+
     -  [thread](https://github.com/467754239/python/blob/master/threads/thread.md)
     -  [threading](https://github.com/467754239/python/blob/master/threads/threading.md)
     -  xxx
