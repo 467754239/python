@@ -1,4 +1,5 @@
 
+## thread该模块已经被弃用
 ```
 #coding:utf-8
 
