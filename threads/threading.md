@@ -26,6 +26,7 @@ if __name__ == '__main__':
     print 'main thread is over'
 ```
 > 执行结果
+
 ```
 This threadName is thread1
 child thread thread1 is over
