@@ -45,10 +45,8 @@
     -  cookie与session
 
 - 多线程、多进程及协成 
-    -  [thread](https://github.com/467754239/python/blob/master/threads/thread.py)
-    -  threading
-        - [threading example 1](https://github.com/467754239/python/blob/master/threads/threading1.py)
-        - [threading example 2](https://github.com/467754239/python/blob/master/threads/threading2.py)
+    -  [thread](https://github.com/467754239/python/blob/master/threads/thread.md)
+    -  [threading](https://github.com/467754239/python/blob/master/threads/threading.md)
 
 - 高级网络编程socket
     -  xxxx

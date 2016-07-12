@@ -1,3 +1,5 @@
+
+```
 #coding:utf-8
 
 import thread
@@ -9,3 +11,4 @@ if __name__ == '__main__':
     thread.start_new(func, ('thread1', ))
     while True:
         pass
+```

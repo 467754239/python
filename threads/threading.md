@@ -1,3 +1,5 @@
+
+```
 # coding:utf-8
 
 import time
@@ -19,3 +21,4 @@ if __name__ == '__main__':
     thread1.start()
     thread1.join()  # 自动执行Th类下的run方法
     print 'main thread is over'
+```
