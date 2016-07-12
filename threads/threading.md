@@ -1,5 +1,7 @@
 
 ## threading 多线程示例1 
+> 执行代码
+
 ```
 # coding:utf-8
 
@@ -22,6 +24,12 @@ if __name__ == '__main__':
     thread1.start()
     thread1.join()  # 自动执行Th类下的run方法
     print 'main thread is over'
+```
+> 执行结果
+```
+This threadName is thread1
+child thread thread1 is over
+main thread is over
 ```
 
 
