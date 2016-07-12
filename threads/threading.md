@@ -36,8 +36,29 @@ main thread is over
 
 
 ## threading 多线程示例2
+> 执行代码   
 ```
+# coding:utf-8
 
+import threading
+
+def func(num):
+    print 'func is start.'
+    print range(num)
+    print 'func is over.'
+
+if __name__ == '__main__':
+    thread1 = threading.Thread(target=func, name='thread1', args=(10,))
+    thread1.start()
+    thread1.join()
+    print 'main thread is over'
+```
+> 执行结果  
+```
+func is start.
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+func is over.
+main thread is over
 ```
 
 
