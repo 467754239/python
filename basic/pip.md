@@ -1,10 +1,13 @@
 ## 安装pip软件包
 ```
+### pip的url地址
 https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 https://bootstrap.pypa.io/get-pip.py
 
-下载并安装
+### 下载pip脚本
 # wget [url]
+
+### 安装pip工具
 # python get-pip.py
 
 确定pip的安装路径
