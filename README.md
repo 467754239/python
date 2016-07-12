@@ -4,32 +4,32 @@
 - 基础
     -  [python2.7](https://github.com/467754239/python/blob/master/basic/python2.7.md)
     -  [pip](https://github.com/467754239/python/blob/master/basic/pip.md)
-    -  [ipython]
-    -  [virtualenv](https://xxxx)
-    -  [流程控制](https://xxxx)
-    -  [容器](https://xxxx)
-    -  [函数](https://xxxx)
-    -  [推倒式](https://xxxx)
-    -  [函数式编程](https://xxxx)
-    -  [装饰器](https://xxxx)
-    -  [上下文管理器](https://xxxx)
-    -  [一行式](https://xxxx)
-    -  [file与open](https://xxxx)
-    -  [迭代器](https://xxxx)
-    -  [异常扑捉](https://xxxx)
-    -  [类](https://xxxx)
-    -  [实现switch](https://xxxx)
-    -  [时间复杂度](https://xxxx)
-    -  [导入模块](https://xxxx)
-    -  [包](https://xxxx)
-    -  [pyc文件](https://xxxx)
-    -  [#!](https://xxxx)
-    -  [urllib/urllib2/request](https://xxxx)
-    -  [正则表达式](https://xxxx)
-    -  [http](https://xxxx)
-    -  [name与main](https://xxxx)
-    -  [range与xrange](https://xxxx)
-    -  [hasattr与getattr](https://xxxx)
+    -  ipython
+    -  virtualenv
+    -  流程控制
+    -  容器
+    -  函数
+    -  推倒式
+    -  函数式编程
+    -  装饰器
+    -  上下文管理器
+    -  一行式
+    -  file与open
+    -  迭代器
+    -  异常扑捉
+    -  类
+    -  实现switch
+    -  时间复杂度
+    -  导入模块
+    -  包
+    -  pyc文件
+    -  #!
+    -  urllib/urllib2/request
+    -  正则表达式
+    -  http
+    -  name与main
+    -  range与xrange
+    -  hasattr与getattr
 	
 
 - - -
