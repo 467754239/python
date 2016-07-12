@@ -98,14 +98,19 @@ main thread is over
 
 ```
 threading.Thread(self, group=None, target=None, name=None, args=(), kwargs=None, verbose=None)
+
 A class that represents a thread of control.
 This class can be safely subclassed in a limited fashion.
+译:
+一个类代表一个线程控制
+这个类可以安全地以有限的方式从它派生出子类
 
-group
-target
-name
-args
-kwargs
-verbose
+类构造函数有以下参数:
+group       # None
+target      # 一个可调用的对象来调用对象的run()方法, 默认是None.
+name        # 线程名字.默认情况下，构造一个唯一名称"Thread-N"(N是一个小的十进制数).
+args        # target调用的元组参数,默认是().
+kwargs      # target调用的字典参数,默认是{}.
+verbose     # 
 ```
 
