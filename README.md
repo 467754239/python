@@ -32,8 +32,6 @@
     -  hasattr与getattr
 	
 
-- - -
-
 - 内置模块
     - os 
         - os.wait
