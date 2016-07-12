@@ -1,6 +1,6 @@
 ## Python Outline
 > 近期笔记整理  
-
+* * *
 - 基础
     -  [python2.7](https://github.com/467754239/python/blob/master/basic/python2.7.md)
     -  [pip](https://github.com/467754239/python/blob/master/basic/pip.md)
