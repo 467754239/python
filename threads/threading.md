@@ -37,6 +37,7 @@ main thread is over
 
 ## threading 多线程示例2
 > 执行代码   
+
 ```
 # coding:utf-8
 
@@ -54,6 +55,7 @@ if __name__ == '__main__':
     print 'main thread is over'
 ```
 > 执行结果  
+
 ```
 func is start.
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
