@@ -95,12 +95,17 @@ main thread is over
 ## threading模块介绍
 
 > threading.Thread
+
 ```
 threading.Thread(self, group=None, target=None, name=None, args=(), kwargs=None, verbose=None)
 A class that represents a thread of control.
 This class can be safely subclassed in a limited fashion.
 
-参数解释:
-
+group
+target
+name
+args
+kwargs
+verbose
 ```
 
