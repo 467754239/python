@@ -113,6 +113,5 @@ target      # 一个可调用的对象来调用对象的run()方法, 默认是No
 name        # 线程名字.默认情况下，构造一个唯一名称"Thread-N"(N是一个小的十进制数).
 args        # target调用的元组参数,默认是().
 kwargs      # target调用的字典参数,默认是{}.
-verbose     # 
 ```
 
