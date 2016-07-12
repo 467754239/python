@@ -1,5 +1,6 @@
 
-## thread该模块已经被弃用
+## thread模块已经被弃用
+> 执行代码
 ```
 #coding:utf-8
 

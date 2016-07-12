@@ -1,4 +1,5 @@
 
+## threading 多线程示例1 
 ```
 # coding:utf-8
 
@@ -21,4 +22,11 @@ if __name__ == '__main__':
     thread1.start()
     thread1.join()  # 自动执行Th类下的run方法
     print 'main thread is over'
+```
+
+
+
+## threading 多线程示例2
+```
+
 ```
