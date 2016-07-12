@@ -16,7 +16,7 @@
     -  一行式
     -  file与open
     -  迭代器
-    -  异常扑捉
+    -  异常处理
     -  类
     -  实现switch
     -  时间复杂度
@@ -25,7 +25,6 @@
     -  pyc文件
     -  #!
     -  urllib/urllib2/request
-    -  正则表达式
     -  http
     -  name与main
     -  range与xrange
@@ -33,8 +32,8 @@
 
 - 内置模块
     - os 
-        - os.wait
     - imp
+    - re 
 
 - 第三方模块
     - psutil
