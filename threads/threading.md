@@ -65,6 +65,31 @@ main thread is over
 
 
 ## threading 多线程示例3
-```
+> 执行代码
 
+```
+# coding:utf-8
+
+import threading
+
+class Th(object):
+    def process(self, N):
+        print 'Th is start.'
+        print range(N)
+        print 'Th is end.'
+
+if __name__ == '__main__':
+    th = Th()
+    thread1 = threading.Thread(target=th.process, name='th_process', args=(10,))
+    thread1.start()
+    thread1.join()
+    print 'main thread is over'
+```
+> 执行结果
+
+```
+Th is start.
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Th is end.
+main thread is over
 ```
