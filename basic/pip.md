@@ -20,4 +20,22 @@
 查看pip当前版本
 # pip -V
 pip 8.1.2 from /usr/local/python27/lib/python2.7/site-packages (python 2.7)
+
+pip命令参数
+# pip -h
+
+pip批量安装包
+# pip install [options] -r <requirements file> [package-index-options]
+# cat > requirements.txt << EOF
+Flask 
+Flask-Bootstrap 
+Flask-Moment
+Flask-Script 
+Flask-Migrate
+Flask-SQLAlchemy 
+Flask-WTF 
+MySQL-python 
+requests
+EOF
+# pip install -r requirements.txt 
 ```
