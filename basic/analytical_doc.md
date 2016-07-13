@@ -32,7 +32,7 @@
 
 ## 集合推倒式
 > 语法  
-> { out_exp for out_exp in input_list if out_exp == 2 }
+> variable = { out_exp for out_exp in input_list if out_exp == 2 }
 
 ```
 示例1:
