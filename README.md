@@ -55,7 +55,7 @@
 
 - 高级网络编程socket
     -  [网络编程原理](https://xxx)
-    -  [实战socket](https://github.com/467754239/python/blob/master/socket/socket_doc.md)
+    -  [实战socket编程](https://github.com/467754239/python/blob/master/socket/socket_doc.md)
 
 - 算法 
     -  快排
