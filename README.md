@@ -4,7 +4,7 @@
 - 基础
     -  [python2.7](https://github.com/467754239/python/blob/master/basic/python2.7.md)
     -  [pip](https://github.com/467754239/python/blob/master/basic/pip.md)
-    -  ipython
+    -  [ipython](https://github.com/467754239/python/blob/master/basic/ipython.md)
     -  virtualenv
     -  流程控制
     -  容器
