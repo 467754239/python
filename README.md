@@ -40,16 +40,18 @@
     - psutil
     - yaml
     - MySQLdb
+    - consul
+    - gevent
 
 - 网络
     -  buffer与cache
     -  cookie与session
 
 - 多线程、多进程及协成 
-    -  [原理多线程](https://github.com/467754239/python/blob/master/threads/threading_doc.md)
+    -  [原理多进程、多线程、协程](https://github.com/467754239/python/blob/master/threads/threading_doc.md)
     -  [实战thread](https://github.com/467754239/python/blob/master/threads/thread.md)
     -  [实战threading](https://github.com/467754239/python/blob/master/threads/threading.md)
-    -  xxx
+    -  [实战协程](https://github.com/467754239/python/blob/master/threads/gevent.md) 
 
 - 高级网络编程socket
     -  [网络编程原理]
