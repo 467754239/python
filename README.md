@@ -9,7 +9,7 @@
     -  流程控制
     -  容器
     -  函数
-    -  推倒式
+    -  [推倒式](https://github.com/467754239/python/blob/master/basic/analytical_doc.md)
     -  函数式编程
     -  装饰器
     -  上下文管理器
