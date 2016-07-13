@@ -1,5 +1,5 @@
 ## Python Outline
-> 上传中 ......
+> 努力上传中 ......
 
 - 基础
     -  [python2.7](https://github.com/467754239/python/blob/master/basic/python2.7.md)
@@ -40,8 +40,6 @@
     - psutil
     - yaml
     - MySQLdb
-    - consul
-    - gevent
 
 - 网络
     -  buffer与cache
@@ -62,11 +60,12 @@
     -  冒泡
     -  求一个list最大的两个值
 
-- 大数据思想 
-    -  map与reduce
-
 - 数据结构
     -  队列
     -  栈
     -  树
     -  图
+
+- 大数据思想 
+    -  map与reduce
+
