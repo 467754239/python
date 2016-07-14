@@ -33,7 +33,8 @@
 - 内置模块
     - os
         - [fork](https://github.com/467754239/python/blob/master/builtin_module/fork_doc.md)
-        - [wait|waitpid](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
+        - [wait](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
+        - [waitpid](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
         - [_exit](https://github.com/467754239/python/blob/master/builtin_module/_exit_doc.md)
     - imp
     - re 
@@ -55,7 +56,7 @@
     -  [实战协程](https://github.com/467754239/python/blob/master/threads/gevent.md) 
 
 - 高级网络编程socket
-    -  网络编程原理
+    -  原理
     -  [实战socket编程](https://github.com/467754239/python/blob/master/socket/socket_doc.md)
 
 - 算法 
