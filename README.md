@@ -32,8 +32,8 @@
 
 - 内置模块
     - [os]
-        - [os.fork](https://github.com/467754239/python/blob/master/builtin_module/fork_doc.md)
-        - [os.wait | os.waitpid](https://github.com/467754239/python/blob/master/builtin_module/wait_wiatpid_doc.md)
+        - [fork](https://github.com/467754239/python/blob/master/builtin_module/fork_doc.md)
+        - [wait|waitpid](https://github.com/467754239/python/blob/master/builtin_module/wait_wiatpid_doc.md)
     - imp
     - re 
     - subprocess

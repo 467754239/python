@@ -1,5 +1,4 @@
-## builtin_module
-> os.fork()
+## os.fork()
 
 ```
 >>> os.fork?
