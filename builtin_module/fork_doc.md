@@ -1,4 +1,5 @@
-## fork
+## os.fork
+> 语法帮助信息 
 
 ```
 >>> os.fork?
