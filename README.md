@@ -34,6 +34,7 @@
     - [os]
         - [fork](https://github.com/467754239/python/blob/master/builtin_module/fork_doc.md)
         - [wait|waitpid](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
+        - [_exit](https://github.com/467754239/python/blob/master/builtin_module/_exit_doc.md)
     - imp
     - re 
     - subprocess
