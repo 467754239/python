@@ -1,4 +1,4 @@
-## os.wait() | os.waitpid(pid, options)
+## wait() | waitpid
 
 ```
 >>> os.wait?
