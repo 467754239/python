@@ -1,4 +1,4 @@
-## wait
+## os.wait
 ```
 >>> os.wait?
 wait() -> (pid, status)
@@ -8,7 +8,7 @@ return (pid, status)
 等待一个子进程完成.
 ```
 
-## waitpid
+## os.waitpid
 ```
 >>> os.waitpid?
 waitpid(pid, options) -> (pid, status)

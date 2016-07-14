@@ -1,4 +1,4 @@
-## _exit
+## os._exit
 ```
 >>> os._exit?
 _exit(status)
