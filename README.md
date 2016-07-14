@@ -31,7 +31,8 @@
     -  hasattr与getattr
 
 - 内置模块
-    - [os](https://github.com/467754239/python/blob/master/builtin_module/os_doc.md)
+    - [os]
+        - [os.fork](https://github.com/467754239/python/blob/master/builtin_module/fork_doc.md)
     - imp
     - re 
     - subprocess
