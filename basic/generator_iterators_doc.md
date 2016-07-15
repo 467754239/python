@@ -69,7 +69,7 @@ gen = yrange(10)
 for n in gen:
     print n
 ```
->>> 方式4
+>> 方式4
 
 ```python
 def read_file(fpath):
@@ -86,12 +86,6 @@ def read_file(fpath):
 
 ```
 避免一次性或者无限制的占用较大的内存.
-```
-> 生成器的应用场景？
-
-
-```
-dosometing
 ```
 ## iterators 迭代器
 > 迭代器的定义？
