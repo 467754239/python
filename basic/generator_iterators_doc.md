@@ -33,7 +33,7 @@ print yx
 
 ```
 
-  - 示例2   
+    - 示例2   
 
 ```python
 #coding:utf-8
