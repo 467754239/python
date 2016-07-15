@@ -9,7 +9,7 @@
 而生成器内的所有变量参数都会被保存下来供下一次使用。
 ```
 2. 创建生成器？  
->> 方式1  
+2.1 示例1  
 
 ```python
 #coding:utf-8
@@ -32,7 +32,7 @@ yx = yrange(10)
 print yx
 
 ```
->> 方式2   
+2.2 示例2   
 
 ```python
 #coding:utf-8
@@ -47,7 +47,7 @@ cg = create_generator(10)
 print cg
 
 ```
->> 方式3
+2.3 示例3
 
 ```python
 #coding:utf-8
@@ -69,7 +69,7 @@ gen = yrange(10)
 for n in gen:
     print n
 ```
->> 方式4
+2.4 示例4
 
 ```python
 def read_file(fpath):
