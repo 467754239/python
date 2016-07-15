@@ -49,7 +49,7 @@ cg = create_generator(10)
 print cg
 
 ```
-    - 示例3  
+> 示例3  
 
 ```python
 #coding:utf-8
@@ -71,7 +71,7 @@ gen = yrange(10)
 for n in gen:
     print n
 ```
-    - 示例4  
+> 示例4  
 
 ```python
 def read_file(fpath):
@@ -91,7 +91,8 @@ def read_file(fpath):
 ```
 - iterators 迭代器  
 
-    - 迭代器的定义？  
+> 迭代器的定义？  
+
 ```
 xxxxx
 ```
