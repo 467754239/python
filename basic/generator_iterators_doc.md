@@ -8,8 +8,8 @@
 然后退出函数，下一次调用生成器函数的时候又从上次中断的地方开始执行，
 而生成器内的所有变量参数都会被保存下来供下一次使用。
 ```
-2. 创建生成器？  
-2.1 示例1  
+2. 创建生成器   
+    2.1 示例1  
 
 ```python
 #coding:utf-8
@@ -32,7 +32,7 @@ yx = yrange(10)
 print yx
 
 ```
-2.2 示例2   
+    2.2 示例2   
 
 ```python
 #coding:utf-8
@@ -47,7 +47,7 @@ cg = create_generator(10)
 print cg
 
 ```
-2.3 示例3
+    2.3 示例3
 
 ```python
 #coding:utf-8
@@ -69,7 +69,7 @@ gen = yrange(10)
 for n in gen:
     print n
 ```
-2.4 示例4
+    2.4 示例4
 
 ```python
 def read_file(fpath):
@@ -82,10 +82,14 @@ def read_file(fpath):
             yield block
 ```
 
-> 生成器解决了什么问题？
+3. 生成器解决了什么问题？
 
 ```
 避免一次性或者无限制的占用较大的内存.
 ```
-3. iterators 迭代器
-> 迭代器的定义？
+4. iterators 迭代器  
+
+    4.1 迭代器的定义？  
+```
+xxxxx
+```
