@@ -9,9 +9,10 @@
 而生成器内的所有变量参数都会被保存下来供下一次使用。
 ```
 > 创建生成器？  
->>   
+>> 方式1  
+```python
+#coding:utf-8
 
-```
 class yrange(object):
     def __init__(self, num):
         self.num = num
@@ -28,7 +29,23 @@ class yrange(object):
 
 yx = yrange(10)
 print yx
+
 ```
+>> 方式2   
+```python
+#coding:utf-8
+
+def create_generator(N):
+    i = 0
+    while i < N:
+        yield i
+        i += 1
+
+cg = create_generator(10) 
+print cg
+
+```
+
 > 生成器解决了什么问题？
 
 ```
