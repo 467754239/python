@@ -15,7 +15,7 @@
     -  上下文管理器
     -  一行式
     -  file与open
-    -  迭代器
+    -  [生成器/迭代器](https://github.com/467754239/python/blob/master/basic/generator_iterators_doc.md)
     -  异常处理
     -  类
     -  实现switch
