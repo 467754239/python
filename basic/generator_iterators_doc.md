@@ -10,6 +10,7 @@
 ```
 > 创建生成器？  
 >> 方式1  
+
 ```python
 #coding:utf-8
 
@@ -32,6 +33,7 @@ print yx
 
 ```
 >> 方式2   
+
 ```python
 #coding:utf-8
 
