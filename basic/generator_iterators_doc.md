@@ -69,11 +69,23 @@ gen = yrange(10)
 for n in gen:
     print n
 ```
+>>> 方式4
+
+```python
+def read_file(fpath):
+    block_size = 1024
+    with open(fpath, 'rb') as f:
+        while True:
+            block = f.read(block_size)
+            if not block:
+		return
+            yield block
+```
 
 > 生成器解决了什么问题？
 
 ```
-dosometing
+避免一次性或者无限制的占用较大的内存.
 ```
 > 生成器的应用场景？
 
