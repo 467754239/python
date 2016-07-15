@@ -47,6 +47,28 @@ cg = create_generator(10)
 print cg
 
 ```
+>> 方式3
+
+```python
+#coding:utf-8
+
+class yrange(object):
+    def __init__(self, num):
+        self.num = num
+        self.initial_val= 0 
+        
+    def __iter__(self):
+        return self.next()
+
+    def next(self):
+        while self.initial_val < self.num:
+            self.initial_val += 1
+            yield self.initial_val
+
+gen = yrange(10)
+for n in gen:
+    print n
+```
 
 > 生成器解决了什么问题？
 

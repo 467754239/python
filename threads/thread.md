@@ -1,6 +1,5 @@
-
 ## thread模块已经被弃用
-```
+```python
 #coding:utf-8
 
 import thread
