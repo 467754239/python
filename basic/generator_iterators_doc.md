@@ -9,14 +9,24 @@
 而生成器内的所有变量参数都会被保存下来供下一次使用。
 ```
 > 创建生成器？  
-
+>>  
 ```
->>> 方式1
-dosometing
+class yrange(object):
+    def __init__(self, num):
+        self.num = num
+        self.initial_val= 0
 
+    def __iter__(self):
+        return self
 
->>> 方式2
-dosometing
+    def next(self):
+        while self.initial_val < self.num:
+            self.initial_val += 1
+            return self.initial_val
+        raise StopIteration
+
+yx = yrange(10)
+print yx
 ```
 > 生成器解决了什么问题？
 
