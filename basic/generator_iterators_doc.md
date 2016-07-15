@@ -9,7 +9,7 @@
 而生成器内的所有变量参数都会被保存下来供下一次使用。
 ```
 > 创建生成器？  
->>  
+>>   
 ```
 class yrange(object):
     def __init__(self, num):
