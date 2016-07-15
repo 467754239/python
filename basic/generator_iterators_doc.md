@@ -10,6 +10,7 @@
 ```
 > 创建生成器？  
 >>   
+
 ```
 class yrange(object):
     def __init__(self, num):
