@@ -2,7 +2,7 @@
 ## threading 多线程示例1 
 > 执行代码
 
-```
+```python
 # coding:utf-8
 
 import time
@@ -35,7 +35,7 @@ main thread is over
 ## threading 多线程示例2
 > 执行代码   
 
-```
+```python
 # coding:utf-8
 
 import threading
@@ -64,7 +64,7 @@ main thread is over
 ## threading 多线程示例3
 > 执行代码
 
-```
+```python
 # coding:utf-8
 
 import threading
