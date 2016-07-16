@@ -78,3 +78,4 @@
 - 大数据思想 
     -  map与reduce
 
+- CAP
