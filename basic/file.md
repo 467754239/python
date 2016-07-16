@@ -63,10 +63,28 @@ f.close()                   # 保存文件并退出，释放资源；
                             # 如果不关闭文件 文件内容还在buffer缓存 并不会刷新到磁盘文件上.
 ```
 
-## 示例
-```
+> 示例1  
+
+```python
 f = open(filename, 'r')
 data = f.read()
 for line in data.split('\n'):
     print line
 ```
+
+> 示例2  
+
+```python
+f = open(filename, 'r')
+lines = f.readline()
+for line in lines:
+    print line
+```
+
+> 示例3  
+
+```python
+f = open(filename, 'r')
+for line in f:
+    print line
+```	
