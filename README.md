@@ -13,7 +13,7 @@
     -  函数式编程
     -  装饰器
     -  上下文管理器
-    -  一行式(https://github.com/467754239/python/blob/master/basic/oneline_doc.md)
+    -  [一行式](https://github.com/467754239/python/blob/master/basic/oneline_doc.md)
     -  file与open
     -  [生成器](https://github.com/467754239/python/blob/master/basic/generator_doc.md)
     -  [迭代器](https://github.com/467754239/python/blob/master/basic/iterators_doc.md)
