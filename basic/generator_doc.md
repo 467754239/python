@@ -8,6 +8,28 @@
 然后退出函数，下一次调用生成器函数的时候又从上次中断的地方开始执行，
 而生成器内的所有变量参数都会被保存下来供下一次使用。
 ```
+- 自带的生成器
+
+```python
+>>> gen = xrange(3)
+>>> dir(gen)			# 具有__iter__方法.
+['__class__', '__delattr__', '__doc__', '__format__', '__getattribute__', '__getitem__', '__hash__', '__init__', '__iter__', '__len__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+>>> generator = gen.__iter__()
+>>> dir(generator)		# 具有next方法.
+['__class__', '__delattr__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__length_hint__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'next']
+>>> generator.next()
+0
+>>> generator.next()
+1
+>>> generator.next()
+2
+>>> generator.next()		# 抛出StopIteration异常表示结束.
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+```
+
+
 - 创建生成器   
 
 > 示例1    
