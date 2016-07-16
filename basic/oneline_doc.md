@@ -1,4 +1,6 @@
 ## 一行式
-```
-xxxxx
+```python
+a = 3
+b = 5
+c = a if a > b else b
 ```
