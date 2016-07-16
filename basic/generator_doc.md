@@ -28,7 +28,8 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
 ```
-> 生成器的特点
+> 生成器的特点  
+
 ```
 1. __iter__() 	# 返回iterators对象本身
 2. next()	# 每当next方法被调用时，返回下一个值直到StopIteration异常被抛出结束.
