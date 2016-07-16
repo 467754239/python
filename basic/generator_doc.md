@@ -28,17 +28,16 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
 ```
-- 生成器的特点
+> 生成器的特点
 ```
 1. __iter__() 	# 返回iterators对象本身
 2. next()	# 每当next方法被调用时，返回下一个值直到StopIteration异常被抛出结束.
 ```
 
-- 创建生成器   
-
-> 示例1    
+> 创建生成器   
 
 ```python
+# 示例1
 #coding:utf-8
 
 class yrange(object):
@@ -58,11 +57,10 @@ class yrange(object):
 yx = yrange(10)
 print yx
 
-```
-
-> 示例2   
+```   
 
 ```python
+# 示例2
 #coding:utf-8
 
 def create_generator(N):
@@ -74,10 +72,10 @@ def create_generator(N):
 cg = create_generator(10) 
 print cg
 
-```
-> 示例3  
+```  
 
 ```python
+# 示例3
 #coding:utf-8
 
 class yrange(object):
@@ -96,10 +94,12 @@ class yrange(object):
 gen = yrange(10)
 for n in gen:
     print n
-```
-> 示例4  
+```  
 
 ```python
+# 示例4
+# coding:utf-8
+
 def read_file(fpath):
     block_size = 1024
     with open(fpath, 'rb') as f:
@@ -110,7 +110,7 @@ def read_file(fpath):
             yield block
 ```
 
-- 生成器解决了什么问题？
+> 生成器解决了什么问题？
 
 ```
 避免一次性或者无限制的占用较大的内存.
