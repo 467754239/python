@@ -50,7 +50,7 @@
     -  buffer与cache
     -  cookie与session
 
-- 多线程、多进程及协成 
+- 多线程、多进程及协程 
     -  [原理](https://github.com/467754239/python/blob/master/threads/principle.md)
     -  [实战thread](https://github.com/467754239/python/blob/master/threads/thread.md)
     -  [实战threading](https://github.com/467754239/python/blob/master/threads/threading.md)
