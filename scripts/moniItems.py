@@ -6,12 +6,13 @@ import time
 import socket
 import logging
 
-FORMAT = '%(asctime)-15s %(levelname)s %(message)s '
+FORMAT = '%(asctime)-15s %(filename)s line:%(lineno)d %(levelname)s %(message)s '
 logging.basicConfig(level=logging.DEBUG, format=FORMAT)
 
 class hostinfo(object):
     def __init__(self):
-        self.unit = {'K' : 1, 'M' : 2 ** 10, 'G' : 2 ** 20, 'T' : 2 ** 30}              # 设置最小单位为k 
+        self.data = {}
+        self.unit = {'K' : 1, 'M' : 2 ** 10, 'G' : 2 ** 20, 'T' : 2 ** 30}  # 设置最小单位为k 
 
     def getHost(self):
         return socket.gethostname()
@@ -70,12 +71,12 @@ class hostinfo(object):
         try:
             if '\xe7\xa3\x81\xe7\x9b\x98' in data:
                 # disks = re.findall(r'磁盘\s(/dev/[a-z]{3,}.*\s[A-Z]{2,})', data)             # cn_disk
-                disks = re.findall(r'磁盘\s(/dev/[a-z]{3,}).*\s[A-Z]{2,},\s([0-9]{1,})\s\xe5\xad\x97\xe8\x8a\x82\xef\xbc\x8c', data)
+                tuple_disks = re.findall(r'磁盘\s(/dev/[a-z]{3,}).*\s[A-Z]{2,},\s([0-9]{1,})\s\xe5\xad\x97\xe8\x8a\x82\xef\xbc\x8c', data)
             else:
                 # disks = re.findall(r'Disk\s(/dev/[a-z]{4,}:\s[\d.]{1,}\s[A-Z]{1,})', data)   # en_disk
                 tuple_disks = re.findall(r'Disk\s(/dev/[a-z]{4,}):\s[\d.]{1,}\s[A-Z]{1,},\s([0-9]{1,})\sbytes', data)
             #return { x.split('\xef\xbc\x9a')[0]:x.split('\xef\xbc\x9a')[1] for x in disks if x }
-            return { x[0]:int(x[1])/1000  for x in disks if x }
+            return { x[0]:int(x[1])/1000  for x in tuple_disks if x }
         except Exception as e:
             logging.error('format disk result error, %s', e)
             return {} 
