@@ -46,6 +46,9 @@
     - yaml
     - MySQLdb
 
+- 脚本
+    - [采集本地主机信息]
+
 - 网络
     -  buffer与cache
     -  cookie与session
@@ -80,3 +83,5 @@
     -  map与reduce
 
 - 开发分布式监控系统
+
+
