@@ -11,7 +11,6 @@ logging.basicConfig(level=logging.DEBUG, format=FORMAT)
 
 class hostinfo(object):
     def __init__(self):
-        self.data = {}
         self.unit = {'K' : 1, 'M' : 2 ** 10, 'G' : 2 ** 20, 'T' : 2 ** 30}  # 设置最小单位为k 
 
     def getHost(self):
