@@ -39,7 +39,7 @@
         - [_exit](https://github.com/467754239/python/blob/master/builtin_module/_exit_doc.md)
     - imp
     - re 
-    - [Queue](https://github.com/467754239/python/blob/master/builtin_module/Queue_doc.md)
+    - [Queue](https://github.com/467754239/python/blob/master/builtin_module/queue_doc.md)
 
 - 第三方模块
     - psutil
