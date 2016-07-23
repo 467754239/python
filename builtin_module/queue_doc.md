@@ -1,5 +1,5 @@
 ## Queue
-> 
+> 示例代码 
 
 ```python
 #coidng:utf-8
@@ -8,9 +8,6 @@ import time
 import Queue
 import logging
 import threading
-
-FORMAT = '%(asctime)-15s %(threadName)5s %(levelname)s %(message)s '
-logging.basicConfig(level=logging.DEBUG, format=FORMAT)
 
 class thread(threading.Thread):
     def __init__(self, name, q):
@@ -52,6 +49,8 @@ def main():
     q2.join()
 
 if __name__ == '__main__':
+    FORMAT = '%(asctime)-15s %(threadName)5s %(levelname)s %(message)s '
+    logging.basicConfig(level=logging.DEBUG, format=FORMAT)
     main()
 ```
 
@@ -60,8 +59,10 @@ if __name__ == '__main__':
 ```
 >>> q = Queue.Queue(maxsize=10)
 创建一个队列并指定一个独立的长度
+
 >>> q.put()
 写队列，timeout等待时间
+
 >>> q.get()
 读队列，timeout等待时间
 
