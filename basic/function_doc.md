@@ -23,12 +23,14 @@ def func(a, b, c=0, *args, **kwargs):
 ```
 
 ```
+# 执行
 args = ('cn', 'henan', '13xxxxxx')
 dic = {'name' : 'zhengys', 'age' : 26, 'sex' : 'male'}
 func('sengled', 'bj', '10', *args, **dic)
 ```
 
 ```
+# 输出
 a sengled
 b bj
 c 10
