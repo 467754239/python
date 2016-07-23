@@ -56,6 +56,27 @@ if __name__ == '__main__':
 ```
 
 > Queue类方法  
-```
 
+```
+>>> q = Queue.Queue(maxsize=10)
+创建一个队列并指定一个独立的长度
+>>> q.put()
+写队列，timeout等待时间
+>>> q.get()
+读队列，timeout等待时间
+
+>>> q.maxsize
+查看创建队列时maxsize的值
+
+>>> q.qsize()
+查看当前队列的长度
+
+>>> q.empty()       
+如果队列长度为空 返回True，反之False.
+
+>>> q.full()
+如果队列满了 返回True 反之False.
+
+>>> q.queue.clear()
+从队列中移除所有的item.
 ```
