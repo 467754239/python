@@ -12,8 +12,9 @@
    注意：#!之后的解释程序，需要写其绝对路径（如：#!/bin/bash），它是不会自动到$PATH中寻找解释器的
 5. 当然，如果你使用”bash test.sh”这样的命令来执行脚本，那么#!这一行将会被忽略掉，解释器当然是用命令行中显式指定的bash.
 ```
-## hexdump是Linux下的一个二进制文件查看工具，可以将二进制文件转换为ASCII、10进制、16进制或8进制进行查看。
-> 二进制文件
+#### hexdump是Linux下的一个二进制文件查看工具，可以将二进制文件转换为ASCII、10进制、16进制或8进制进行查看。
+> 二进制文件  
+> 457f表示二进制文件 
 
 ```
 # hexdump /bin/cat | head -n 1 | awk '{ print $1, $2 }'
@@ -23,7 +24,7 @@
 # hexdump /bin/sed | head -n 1 | awk '{ print $1, $2 }'
 0000000 457f
 ```
-
+> 2123表示脚本
 ```
 $ cat th1.sh 
 echo 'hello world.'
@@ -51,3 +52,4 @@ print 'hello world.'
 # hexdump th4.py  | head -n 1 | awk '{ print $1, $2 }'
 0000000 2123
 ```
+二进制文件的前两位决定了是什么文件、视频格式等.
