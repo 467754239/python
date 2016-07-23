@@ -48,7 +48,7 @@
     - MySQLdb
 
 - 脚本
-    - [采集本地主机信息](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
+    - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
 
 - 网络
     -  buffer与cache
