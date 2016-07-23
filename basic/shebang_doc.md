@@ -25,6 +25,7 @@
 0000000 457f
 ```
 > 2123表示脚本
+
 ```
 $ cat th1.sh 
 echo 'hello world.'
