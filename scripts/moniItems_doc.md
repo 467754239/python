@@ -70,6 +70,9 @@ class hostinfo(object):
         disks_unit = self._formatDisk(data)
         return { k : self.formatNum(v) for k, v in disks_unit.items() }
 
+    def getTime(self):
+        return int(time.time())
+
     def _formatDisk(self, data):
         try:
             if '\xe7\xa3\x81\xe7\x9b\x98' in data:
@@ -84,9 +87,6 @@ class hostinfo(object):
             logging.error('format disk result error, %s', e)
             return {} 
 
-    def getTime(self):
-        return int(time.time())
-
     def formatNum(self, num):
         for k, v in self.unit.items():
             t = float(num) / v
@@ -94,7 +94,7 @@ class hostinfo(object):
                 return '%s%s' % (round(t, 2), k)
         return
 
-    def formatData(self):
+    def runAllGet(self):
         msgInfo = {
                 'loadavg' : self.getLoadAvg(),
                 'MemTotal' : self.getMemTotal(),
@@ -109,7 +109,7 @@ class hostinfo(object):
 if __name__ == '__main__':
     FORMAT = '%(asctime)-15s %(filename)s line:%(lineno)d %(levelname)s %(message)s '
     logging.basicConfig(level=logging.DEBUG, format=FORMAT)
-    data = hostinfo().formatData()
+    data = hostinfo().runAllGet()
     logging.debug('data:%s', data)
 ```
 
