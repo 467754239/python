@@ -1,5 +1,6 @@
 ## function
-> 函数参数 
+> 函数参数  
+ 
 1. 位置参数
 2. 关键字参数
 3. 默认参数
@@ -11,6 +12,7 @@
     2. *tuple -> 位置参数.
 
 > 示例  
+
 ```python
 def f1(a, b, c=0, *args, **kwargs):
     print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kwargs)
