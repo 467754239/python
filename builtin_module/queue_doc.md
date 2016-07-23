@@ -65,6 +65,8 @@ if __name__ == '__main__':
 
 >>> q.get()
 读队列，timeout等待时间
+默认是堵塞的方式读取数据，队列为空时，不会抛出except Queue.Empty，而是进入了堵塞直至超时，
+加上参数block=False可以解决这个问题.
 
 >>> q.maxsize
 查看创建队列时maxsize的值
