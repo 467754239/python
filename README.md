@@ -39,6 +39,7 @@
         - [_exit](https://github.com/467754239/python/blob/master/builtin_module/_exit_doc.md)
     - imp
     - re 
+    - cPickle
     - [Queue](https://github.com/467754239/python/blob/master/builtin_module/queue_doc.md)
 
 - 第三方模块
@@ -47,7 +48,7 @@
     - MySQLdb
 
 - 脚本
-    - [采集本地主机信息](https://github.com/467754239/python/blob/master/scripts/moniItems.py)
+    - [采集本地主机信息](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
 
 - 网络
     -  buffer与cache

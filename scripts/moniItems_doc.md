@@ -1,3 +1,7 @@
+## 采集主机信息
+> 主机名、总计内存、使用内存、空闲内存、多个硬盘总计、当前时间戳  
+
+```python
 #coding:utf-8
 
 import re
@@ -6,8 +10,6 @@ import time
 import socket
 import logging
 
-FORMAT = '%(asctime)-15s %(filename)s line:%(lineno)d %(levelname)s %(message)s '
-logging.basicConfig(level=logging.DEBUG, format=FORMAT)
 
 class hostinfo(object):
     def __init__(self):
@@ -103,5 +105,8 @@ class hostinfo(object):
         return msgInfo
 
 if __name__ == '__main__':
+    FORMAT = '%(asctime)-15s %(filename)s line:%(lineno)d %(levelname)s %(message)s '
+    logging.basicConfig(level=logging.DEBUG, format=FORMAT)
     data = hostinfo().formatData()
-    print data
+    logging.debug('data:%s', data)
+```
