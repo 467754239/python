@@ -115,8 +115,11 @@ args        # target调用的元组参数,默认是().
 kwargs      # target调用的字典参数,默认是{}.
 ```
 
-## 区别join和setDaemon
+## join和setDaemon
 ```
-setDaemon	# 设置为守护线程，当守护线程结束后，所有子进程也一同退出.
-join		# 主线程堵塞 等待子进程退出后 主线程在退出.
+setDaemon
+# 主线程A启动了子线程B，调用了b.setDaemaon(True)，则主线程结束时，会把子线程B也杀死.
+ 
+join
+# 主线程堵塞 等待子进程退出后 主线程在退出.
 ```
