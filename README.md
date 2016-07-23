@@ -24,7 +24,7 @@
     -  导入模块
     -  包
     -  pyc文件
-    -  #!
+    -  [#!](https://github.com/467754239/python/blob/master/basic/shebang_doc.md)
     -  urllib/urllib2/request
     -  http
     -  name与main
