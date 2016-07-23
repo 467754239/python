@@ -24,7 +24,8 @@
 # hexdump /bin/sed | head -n 1 | awk '{ print $1, $2 }'
 0000000 457f
 ```
-> 2123表示脚本
+
+> 2123表示脚本  
 
 ```
 $ cat th1.sh 
