@@ -8,7 +8,7 @@
     -  virtualenv
     -  流程控制
     -  容器
-    -  函数
+    -  [函数](https://github.com/467754239/python/blob/master/basic/function_doc.md)
     -  [推倒式](https://github.com/467754239/python/blob/master/basic/analytical_doc.md)
     -  函数式编程
     -  装饰器
