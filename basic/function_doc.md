@@ -15,7 +15,6 @@
 
 ```python
 def func(a, b, c=0, *args, **kwargs):
-    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kwargs)
     print 'a', a
     print 'b', b
     print 'c', c
@@ -27,6 +26,14 @@ def func(a, b, c=0, *args, **kwargs):
 args = ('cn', 'henan', '13xxxxxx')
 dic = {'name' : 'zhengys', 'age' : 26, 'sex' : 'male'}
 func('sengled', 'bj', '10', *args, **dic)
+```
+
+```
+a sengled
+b bj
+c 10
+args ('cn', 'henan', '13xxxxxx')
+kwargs {'age': 26, 'name': 'zhengys', 'sex': 'male'}
 ```
 
 > 注意事项
