@@ -112,3 +112,12 @@ if __name__ == '__main__':
     data = hostinfo().formatData()
     logging.debug('data:%s', data)
 ```
+
+> 代码执行结果
+
+```python
+$ python moniItems.py
+WARNING: fdisk GPT support is currently new, and therefore in an experimental phase. Use at your own discretion.
+{'MemTotal': '3.68G', 'MemUsage': '3.36G', 'MemFree': '330.45M', '/dev/xvda': '8.19G', 'host': 'ip-172-30-29-108', 'loadavg': '0.00', 'time': 1469238194, '/dev/xvdb': '4.09G'}
+2016-07-23 01:43:14,595 moniItems.py line:109 DEBUG data : {'MemTotal': '3.68G', 'MemUsage': '3.36G', 'MemFree': '330.45M', '/dev/xvda': '8.19G', 'host': 'ip-172-30-29-108', 'loadavg': '0.00', 'time': 1469238194, '/dev/xvdb': '4.09G'}
+```
