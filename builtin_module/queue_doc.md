@@ -1,5 +1,5 @@
 ## Queue
-> 示例代码 
+> 队列是线程最常用的交换数据形式. 
 
 ```python
 #coidng:utf-8
@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
 ```
 >>> q = Queue.Queue(maxsize=10)
-创建一个队列并指定一个独立的长度
+创建一个队列并指定一个队列的长度
 
 >>> q.put()
 写队列，timeout等待时间
