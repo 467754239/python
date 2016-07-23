@@ -96,12 +96,12 @@ class hostinfo(object):
 
     def runAllGet(self):
         msgInfo = {
-                'loadavg' : self.getLoadAvg(),
+                'LoadAvg' : self.getLoadAvg(),
                 'MemTotal' : self.getMemTotal(),
                 'MemFree' : self.getMemUsage(),
                 'MemUsage' : self.getMemFree(),
-                'time' : self.getTime(),
-                'host' : self.getHost(),
+                'Time' : self.getTime(),
+                'Host' : self.getHost(),
                 }
         msgInfo.update(self.getDisk())
         return msgInfo
