@@ -21,7 +21,9 @@ def func(a, b, c=0, *args, **kwargs):
     print 'c', c
     print 'args', args
     print 'kwargs', kwargs
+```
 
+```
 args = ('cn', 'henan', '13xxxxxx')
 dic = {'name' : 'zhengys', 'age' : 26, 'sex' : 'male'}
 func('sengled', 'bj', '10', *args, **dic)
