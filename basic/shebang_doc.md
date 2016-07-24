@@ -55,3 +55,36 @@ print 'hello world.'
 0000000 2123
 ```
 二进制文件的前两位决定了是什么文件、视频格式等.
+
+> 你猜猜这些脚本的执行结果吧！！！ 呵呵呵 
+
+```
+$ th1
+name = 'zhengys'
+
+$ th2.sh
+name = 'zhengys'
+
+$ th3.py
+name = 'zhengys'
+
+$ th4.sh
+#!/bin/bash
+name = 'zhengys'
+
+$ th5.py
+#!/bin/bash
+name = 'zhengys'
+
+$ th6.sh
+#!/bin/cat
+name = 'zhengys'
+
+$ th7.py
+#!/bin/cat
+name = 'zhengys'
+
+$ th7.py
+#!/bin/ping
+name = 'zhengys'
+```
