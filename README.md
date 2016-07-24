@@ -10,7 +10,7 @@
     -  容器
     -  [函数](https://github.com/467754239/python/blob/master/basic/function_doc.md)
     -  [推倒式](https://github.com/467754239/python/blob/master/basic/analytical_doc.md)
-    -  函数式编程
+    -  [函数式编程](https://github.com/467754239/python/blob/master/basic/function_program_doc.md)
     -  装饰器
     -  上下文管理器
     -  [一行式](https://github.com/467754239/python/blob/master/basic/oneline_doc.md)
