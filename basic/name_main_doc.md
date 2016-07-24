@@ -1,4 +1,4 @@
-## \__name__ and \__main__
+## \__name__ 和 \__main__
 
 > 示例1
 
