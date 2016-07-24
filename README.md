@@ -37,7 +37,7 @@
         - [wait](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
         - [waitpid](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
         - [_exit](https://github.com/467754239/python/blob/master/builtin_module/_exit_doc.md)
-    - imp
+    - [imp](https://github.com/467754239/python/blob/master/builtin_module/imp_doc.md)
     - re 
     - cPickle
     - [Queue](https://github.com/467754239/python/blob/master/builtin_module/queue_doc.md)
