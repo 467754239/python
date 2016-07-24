@@ -27,7 +27,7 @@
     -  [#!](https://github.com/467754239/python/blob/master/basic/shebang_doc.md)
     -  urllib/urllib2/request
     -  http
-    -  name与main
+    -  \__name__与\__main__(https://github.com/467754239/python/blob/master/basic/name_main_doc.md)
     -  range与xrange
     -  hasattr与getattr
 
