@@ -7,7 +7,7 @@
 2) 创建虚拟环境目录
 # virtualenv env
 
-3) 进入虚拟环境目录
+3) 进入虚拟环境
 # source env/bin/activate
 
 4) 退出虚拟
