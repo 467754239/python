@@ -67,7 +67,7 @@
 - 算法 
     -  快排
     -  冒泡
-    -  求一个list最大的两个值
+    -  [求一个list最大的两个值](https://github.com/467754239/python/blob/master/algorithm/list_sort.md)
     -  哈希
 
 - 数据结构
