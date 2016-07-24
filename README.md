@@ -5,7 +5,7 @@
     -  [python2.7](https://github.com/467754239/python/blob/master/basic/python2.7.md)
     -  [pip](https://github.com/467754239/python/blob/master/basic/pip.md)
     -  [ipython](https://github.com/467754239/python/blob/master/basic/ipython.md)
-    -  virtualenv
+    -  [virtualenv](https://github.com/467754239/python/blob/master/basic/virtualenv_doc.md)
     -  流程控制
     -  容器
     -  [函数](https://github.com/467754239/python/blob/master/basic/function_doc.md)
