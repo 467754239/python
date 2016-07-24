@@ -17,7 +17,7 @@
     -  [file与open](https://github.com/467754239/python/blob/master/basic/file.md)
     -  [生成器](https://github.com/467754239/python/blob/master/basic/generator_doc.md)
     -  [迭代器](https://github.com/467754239/python/blob/master/basic/iterators_doc.md)
-    -  异常处理
+    -  [异常处理](https://github.com/467754239/python/blob/master/basic/exception_doc.md)
     -  类
     -  实现switch
     -  时间复杂度
