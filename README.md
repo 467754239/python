@@ -26,8 +26,6 @@
     -  urllib/urllib2/request
     -  http
     -  [\__name__与\__main__](https://github.com/467754239/python/blob/master/basic/name_main_doc.md)
-    -  range与xrange
-    -  hasattr与getattr
 
 - 内置模块
     - os
@@ -36,9 +34,8 @@
         - [waitpid](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
         - [_exit](https://github.com/467754239/python/blob/master/builtin_module/_exit_doc.md)
     - [imp](https://github.com/467754239/python/blob/master/builtin_module/imp_doc.md)
-    - re 
-    - cPickle
     - [Queue](https://github.com/467754239/python/blob/master/builtin_module/queue_doc.md)
+    - re 
 
 - 第三方模块
     - psutil
