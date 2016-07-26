@@ -18,17 +18,17 @@ with_suite就是需要放在上下文环境中执行的语句块
 ```
 
 示例1
-> 内置的上下文管理器
+> python中内置的上下文管理器,用于对文件的读写操作
 
 ```
 with open('filename.txt', 'r') as fd:
     fd.read()
+
 ```
 
 示例2
-> 代码
-
 ```
+# coding
 class fileopen(object):
     def __init__(self, filename, mode):
         self.filename = filename
@@ -41,10 +41,8 @@ class fileopen(object):
         
     def __exit__(self, exc_type, exc_value, traceback):
         self.fd.close()
-```
-> 执行代码
 
-```
+# execute cdoing
 with fileopen('/tmp/nihao.txt', 'w') as fd_write:
     fd_write.write('123456')
 ```
