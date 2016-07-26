@@ -18,7 +18,7 @@ with_suite就是需要放在上下文环境中执行的语句块
 ```
 
 示例1
-> python中内置的上下文管理器,用于对文件的读写操作
+> python中内置的上下文管理器，用于对文件的读写操作
 
 ```
 with open('filename.txt', 'r') as fd:
