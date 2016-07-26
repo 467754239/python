@@ -42,6 +42,7 @@ class fileopen(object):
         self.fd.close()
 ```
 > 执行代码
+
 ```
 with fileopen('/tmp/nihao.txt', 'w') as fd_write:
     fd_write.write('123456')
