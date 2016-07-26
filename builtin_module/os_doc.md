@@ -42,7 +42,7 @@ father pid 1749 in child.
 3. 子进程从父进程中clone一份同样的地址空间 两者独立 互不影响
 ```
 
-os.wait
+## os.wait ##
 ```
 >>> os.wait?
 wait() -> (pid, status)
@@ -50,8 +50,7 @@ Wait for completion of a child process.
 等待一个子进程完成.
 ```
 
-os.waitpid
-
+## os.waitpid ##
 ```
 >>> os.waitpid?
 waitpid(pid, options) -> (pid, status)
@@ -59,8 +58,7 @@ Wait for completion of a given child process.
 等待一个给定的子进程完成.
 ```
 
-os.\_exit
-
+## os.\_exit ##
 ```
 >>> os._exit?
 _exit(status)
