@@ -1,6 +1,5 @@
 ## os ##
-> os.fork
-
+os.fork
 ```
 >>> os.fork?
 fork() -> pid
@@ -11,8 +10,7 @@ Fork一个子进程.
 
 ```
 
-> os.wait
-
+os.wait
 ```
 >>> os.wait?
 wait() -> (pid, status)
@@ -21,7 +19,7 @@ Wait for completion of a child process.
 等待一个子进程完成.
 ```
 
-> os.waitpid
+os.waitpid
 
 ```
 >>> os.waitpid?
@@ -31,7 +29,7 @@ Wait for completion of a given child process.
 等待一个给定的子进程完成.
 ```
 
-> os.\_exit
+os.\_exit
 
 ```
 >>> os._exit?
