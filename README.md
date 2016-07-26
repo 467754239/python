@@ -28,7 +28,7 @@
     -  [\__name__与\__main__](https://github.com/467754239/python/blob/master/basic/name_main_doc.md)
 
 - 内置模块
-    - os
+    - [os](https://github.com/467754239/python/blob/master/builtin_module/os_doc.md)
         - [fork](https://github.com/467754239/python/blob/master/builtin_module/fork_doc.md)
         - [wait](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
         - [waitpid](https://github.com/467754239/python/blob/master/builtin_module/wait_waitpid_doc.md)
