@@ -23,7 +23,7 @@ with_suite就是需要放在上下文环境中执行的语句块
 ```
 
 示例1
-> python中内置的上下文管理器，用于对文件的读写操作
+> Python 2.5+中内置的上下文管理器，用于对文件的读写操作
 
 ```
 with open('filename.txt', 'r') as fd:
@@ -49,10 +49,4 @@ class fileopen(object):
 # execute cdoing
 with fileopen('/tmp/nihao.txt', 'w') as fd_write:
     fd_write.write('123456')
-```
-
-
-示例3
-```
-xxx
 ```
