@@ -1,5 +1,5 @@
 ## 上下文管理器 ##
-[document](https://docs.python.org/3/reference/datamodel.html#with-statement-context-managers)
+[`Context Manager Types`](https://docs.python.org/3/reference/datamodel.html#with-statement-context-managers)
 
 功能
 ```
