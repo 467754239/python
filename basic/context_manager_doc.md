@@ -23,7 +23,6 @@ with_suite就是需要放在上下文环境中执行的语句块
 ```
 with open('filename.txt', 'r') as fd:
     fd.read()
-
 ```
 
 示例2
