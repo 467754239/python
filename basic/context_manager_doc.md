@@ -19,6 +19,7 @@ with_suite就是需要放在上下文环境中执行的语句块
 
 示例1
 > 内置的上下文管理器
+
 ```
 with open('filename.txt', 'r') as fd:
     fd.read()
