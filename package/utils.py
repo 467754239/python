@@ -14,6 +14,7 @@ def logging_conf():
     logger = logging.getLogger('general')
 
 def get_config(section):
+    logging_conf()
     config = ConfigParser.ConfigParser()
     cur_dir = os.path.dirname(os.path.realpath(__file__))
     service_conf = os.path.join(cur_dir, './conf/config.ini')
@@ -21,6 +22,6 @@ def get_config(section):
         config.read(service_conf)
         conf_items = dict(config.items(section))
     except Exception as e:
-        print 'load config file error, %s', e
+        logging.error('load config file error, %s', e)
         conf_items = {}
     return conf_items
