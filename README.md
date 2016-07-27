@@ -41,6 +41,8 @@
 - 脚本
     - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
 
+- [工具包](https://github.com/467754239/python/blob/master/package)
+
 - 网络
     -  buffer与cache
     -  cookie与session
