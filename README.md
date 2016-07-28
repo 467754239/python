@@ -31,12 +31,12 @@
     - [os](https://github.com/467754239/python/blob/master/builtin_module/os_doc.md)
     - [imp](https://github.com/467754239/python/blob/master/builtin_module/imp_doc.md)
     - [Queue](https://github.com/467754239/python/blob/master/builtin_module/queue_doc.md)
+    - logging
+    - subprocess
     - re 
 
 - 第三方模块
-    - psutil
     - yaml
-    - MySQLdb
 
 - 脚本
     - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)

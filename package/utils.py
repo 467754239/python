@@ -7,12 +7,13 @@ import ConfigParser
 
 global logger
 
-'''日志配置'''
+'''load logging file'''
 def logging_conf():
     global logger
     logging.config.fileConfig('./conf/logging.conf')
     logger = logging.getLogger('general')
 
+'''load configuration file'''
 def get_config(section):
     logging_conf()
     config = ConfigParser.ConfigParser()
@@ -25,3 +26,6 @@ def get_config(section):
         logging.error('load config file error, %s', e)
         conf_items = {}
     return conf_items
+
+logging_conf()
+logger.debug('123')
