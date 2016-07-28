@@ -32,6 +32,7 @@
     - [imp](https://github.com/467754239/python/blob/master/builtin_module/imp_doc.md)
     - [Queue](https://github.com/467754239/python/blob/master/builtin_module/queue_doc.md)
     - logging
+    - signal
     - subprocess
     - re 
 
