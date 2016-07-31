@@ -39,7 +39,7 @@
 - 第三方模块
     - yaml
 
-- python状态机
+- 状态机
 
 - 脚本
     - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
