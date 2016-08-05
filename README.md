@@ -44,7 +44,9 @@
 - 脚本
     - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
 
-- [工具包](https://github.com/467754239/python/blob/master/package)
+- 工具包
+    - [utils](https://github.com/467754239/python/blob/master/package)
+    - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 
 - 网络
     -  buffer与cache
