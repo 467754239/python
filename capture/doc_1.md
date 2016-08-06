@@ -9,7 +9,6 @@
 
 import re
 import os
-import json
 import requests
 
 def run(url):
