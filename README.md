@@ -75,7 +75,7 @@
     -  图
 
 - 网络爬虫
-    - 思路
+    - [思路](https://github.com/467754239/python/blob/master/capture/thought_doc.md)
     - 实战
         - [简单示例1](https://github.com/467754239/python/blob/master/capture/doc_1.md)
 
