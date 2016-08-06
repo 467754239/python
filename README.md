@@ -39,7 +39,7 @@
 - 第三方模块
     - yaml
 
-- [状态机](https://github.com/467754239/python/blob/master/doc_01.md)
+- [状态机](https://github.com/467754239/python/blob/master/state_machine/doc_01.md)
 
 - 脚本
     - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
