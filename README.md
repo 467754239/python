@@ -77,7 +77,7 @@
 - 网络爬虫
     - 思路
     - 实战
-        - [入门级](https://github.com/467754239/python/blob/master/capture/doc_1.md)
+        - [例子](https://github.com/467754239/python/blob/master/capture/doc_1.md)
 
 - 大数据思想 
     -  map与reduce
