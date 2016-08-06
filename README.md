@@ -37,8 +37,6 @@
     - re 
 
 - 第三方模块
-    - yaml
-
 - [状态机](https://github.com/467754239/python/blob/master/state_machine/doc_01.md)
 
 - 脚本
