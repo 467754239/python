@@ -83,3 +83,6 @@ print func.__name__
 
 装饰器用@符号来表示
 ```
+
+参考资料
+- [pc大神 两个实用的Python的装饰器](https://zhuanlan.zhihu.com/p/20175869)
