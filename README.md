@@ -24,7 +24,6 @@
     -  [pyc文件](https://github.com/467754239/python/blob/master/basic/pyc_doc.md)
     -  [#!](https://github.com/467754239/python/blob/master/basic/shebang_doc.md)
     -  urllib/urllib2/requests
-    -  http
     -  [\__name__与\__main__](https://github.com/467754239/python/blob/master/basic/name_main_doc.md)
 
 - 内置模块
@@ -76,5 +75,6 @@
 - 网络爬虫
     - 思路
     - [实战](https://github.com/467754239/python/blob/master/web_spider/web_spider_doc.md)
+
 - 大数据思想 
     -  map与reduce
