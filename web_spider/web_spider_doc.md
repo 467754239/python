@@ -1,4 +1,4 @@
-## 简单示例1
+## 示例1
 > 豆瓣电影中单个url  
 > 尽可能匹配url中电影的所有封面(封面的名称及图片)  
 
@@ -52,3 +52,7 @@ if __name__ == '__main__':
 我们诞生在中国 -> https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2370034655.jpg
 绝地逃亡 -> https://img3.doubanio.com/view/movie_poster_cover/mpst/public/p2366057661.jpg
 ```
+
+## 示例2  
+> 抓取整站  
+
