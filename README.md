@@ -18,9 +18,7 @@
     -  [生成器](https://github.com/467754239/python/blob/master/basic/generator_doc.md)
     -  [迭代器](https://github.com/467754239/python/blob/master/basic/iterators_doc.md)
     -  [异常处理](https://github.com/467754239/python/blob/master/basic/exception_doc.md)
-    -  类
     -  [实现switch](https://github.com/467754239/python/blob/master/basic/switch_doc.md)
-    -  时间复杂度
     -  [pyc文件](https://github.com/467754239/python/blob/master/basic/pyc_doc.md)
     -  [#!](https://github.com/467754239/python/blob/master/basic/shebang_doc.md)
     -  urllib/urllib2/requests
