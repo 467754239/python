@@ -1,4 +1,4 @@
-## Decorate 装饰器
+## 装饰器(decorate)
 
 
 > 示例1  
