@@ -1,8 +1,7 @@
 ## 装饰器(decorate)
 
-
-> 示例1  
-> 函数以参数的形式传递给装饰器并返回一个改变后的函数.
+示例1  
+> func函数以参数的形式传递给装饰器并返回一个改变后的func.
 
 ```python
 def decorate(func):
@@ -19,6 +18,17 @@ def func():
 func = decorate(func)
 func()
 ```
+
+使用:
+```
+func()	# 调用
+
+### 输出
+wrapper function
+hello world.
+```
+
+
 
 > 示例2  
 > 装饰器修改了原始的function\_name和function\_doc
