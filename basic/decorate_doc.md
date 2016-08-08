@@ -17,6 +17,10 @@ def decorate(func):
 @decorate
 def func():
     print 'hello world.'
+
+等价于
+func = decorate(func)
+func()
 ```
 
 > 示例2  
