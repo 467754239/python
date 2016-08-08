@@ -74,7 +74,6 @@
 
 - 网络爬虫
     - 思路
-    - [实战](https://github.com/467754239/python/blob/master/capture/web_spider_doc.md)
-
+    - [实战](https://github.com/467754239/python/blob/master/pider/web_spider_doc.md)
 - 大数据思想 
     -  map与reduce
