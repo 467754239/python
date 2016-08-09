@@ -6,8 +6,6 @@
     -  [pip](https://github.com/467754239/python/blob/master/basic/pip.md)
     -  [ipython](https://github.com/467754239/python/blob/master/basic/ipython.md)
     -  [virtualenv](https://github.com/467754239/python/blob/master/basic/virtualenv_doc.md)
-    -  流程控制
-    -  容器
     -  [函数](https://github.com/467754239/python/blob/master/basic/function_doc.md)
     -  [推倒式](https://github.com/467754239/python/blob/master/basic/analytical_doc.md)
     -  [函数式编程](https://github.com/467754239/python/blob/master/basic/function_program_doc.md)
@@ -21,7 +19,6 @@
     -  [实现switch](https://github.com/467754239/python/blob/master/basic/switch_doc.md)
     -  [pyc文件](https://github.com/467754239/python/blob/master/basic/pyc_doc.md)
     -  [#!](https://github.com/467754239/python/blob/master/basic/shebang_doc.md)
-    -  urllib/urllib2/requests
     -  [\__name__与\__main__](https://github.com/467754239/python/blob/master/basic/name_main_doc.md)
 
 - 内置模块
@@ -32,8 +29,11 @@
     - [logging](https://github.com/467754239/python/blob/master/builtin_module/logging_doc.md)
     - signal
     - re 
+    - imp
+    - requests
 
 - 第三方模块
+
 - [状态机](https://github.com/467754239/python/blob/master/state_machine/doc_01.md)
 
 - 脚本
