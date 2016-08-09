@@ -1,6 +1,6 @@
 ## Nginx access.log
 
-> 处理日志文件,按ip字段进行排序.
+> 处理日志文件，按ip字段进行排序。
 
 ```
 $ head -n 10 access-8000.log
@@ -17,6 +17,7 @@ $ head -n 10 access-8000.log
 ```
 
 > Shell
+
 ```
 $ awk '{ print $1 }' access-8000.log | uniq -c | sort -n -r | head -n 10
     261 219.232.105.98
