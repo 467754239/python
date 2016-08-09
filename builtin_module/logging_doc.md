@@ -1,6 +1,4 @@
-## logging
-
-### 示例1
+## 示例1
 ```
 import logging
 
