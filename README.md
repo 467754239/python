@@ -28,9 +28,9 @@
     - [os](https://github.com/467754239/python/blob/master/builtin_module/os_doc.md)
     - [imp](https://github.com/467754239/python/blob/master/builtin_module/imp_doc.md)
     - [Queue](https://github.com/467754239/python/blob/master/builtin_module/queue_doc.md)
+    - [subprocess](https://github.com/467754239/python/blob/master/builtin_module/subprocess_doc.md)
     - logging
     - signal
-    - subprocess
     - re 
 
 - 第三方模块
