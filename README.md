@@ -40,7 +40,8 @@
     - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
 
 - 工具包
-    - [utils](https://github.com/467754239/python/blob/master/package)
+    - [utils](https://github.com/467754239/python/blob/master/tools/db_utils)
+    - [mail](https://github.com/467754239/python/blob/master/tools/mail)
     - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 
 - 网络
@@ -48,11 +49,11 @@
     -  cookie与session
 
 - 多线程、多进程及协程 
-    - [原理](https://github.com/467754239/python/blob/master/threads/principle.md)
-    - [实战thread](https://github.com/467754239/python/blob/master/threads/thread.md)
-    - [实战threading](https://github.com/467754239/python/blob/master/threads/threading.md)
-    - [实战协程](https://github.com/467754239/python/blob/master/threads/gevent.md) 
-    - [参考文章](https://github.com/467754239/python/blob/master/threads/reference_doc.md)
+    - [原理](https://github.com/467754239/python/blob/master/concurrent_programming/principle.md)
+    - [实战thread](https://github.com/467754239/python/blob/master/concurrent_programming/thread.md)
+    - [实战threading](https://github.com/467754239/python/blob/master/concurrent_programming/threading.md)
+    - [实战协程](https://github.com/467754239/python/blob/master/concurrent_programming/gevent.md) 
+    - [参考文章](https://github.com/467754239/python/blob/master/concurrent_programming/reference_doc.md)
 
 - 高级网络编程socket
     -  原理
