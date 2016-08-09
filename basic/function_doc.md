@@ -10,7 +10,7 @@
     2. \*tuple -> 位置参数.
 
 ## 示例1 
-```
+```python
 # 代码
 def func(a, b, c=0, *args, **kwargs):
     print 'a', a
@@ -41,6 +41,15 @@ def A(*args, **kwargs):
 def B(*args, **kwargs):
     print 'args=', args
     print 'kwargs=', kwargs
+
+'''
+# 函数A等价于
+def A(*args, **kwargs):
+    args = args
+    kwargs = kwargs
+    return B(*args, **kwargs)
+'''
+
 # 执行
 args = ('zhengys', 'china')
 kwargs = {'tel' :'132', 'age' : '26'}
@@ -50,6 +59,9 @@ A(*args, **kwargs)
 args= ('zhengys', 'china')
 kwargs= {'age': '26', 'tel': '132'}
 ```
+
+> 示例1代码 是为了区分位置参数、关键字参数、任意数量的位置参数、任意数量的关键字参数.  
+> 示例2代码 是为了说明在函数A中调用函数B，函数B的参数就是接收的函数A的参数 这个时候函数B也要用\*args和\*\*kwargs
 
 ## 注意
 
