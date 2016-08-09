@@ -1,6 +1,3 @@
-> Nginx(access.log)
-> 处理日志文件，按ip字段进行排序。
-
 ```
 $ head -n 10 access-8000.log
 54.222.132.12 - - [2016-08-09T00:15:19+00:00] "POST /user/app/customer/AuthenCross.json HTTP/1.1" 200 213 "-" "Apache-HttpClient/4.5.2 (Java/1.6.0_45)" "-"
@@ -15,20 +12,23 @@ $ head -n 10 access-8000.log
 220.248.15.74 - - [2016-08-09T00:25:08+00:00] "GET /amazon-storage/download?bucketName=sengledimagebucket&filename=F59B7A3F03317289EFDC9648C4D507B0_motion_1470643977078_small.jpg HTTP/1.1" 200 12680 "-" "snap/1.1.53 CFNetwork/758.5.3 Darwin/15.6.0" "-"
 ```
 
-```
-$ awk '{ print $1 }' access-8000.log | uniq -c | sort -n -r | head -n 10
-    261 219.232.105.98
-    117 219.232.105.98
-     69 219.232.105.98
-     56 220.248.15.74
-     56 219.232.105.104
-     49 219.232.105.98
-     41 219.232.105.98
-     39 219.232.105.98
-     36 219.232.105.98
-     36 219.232.105.104
+## 用shell的方式处理日志并对ip字段排序
+```shell
+# awk '{ print $1 }' access-8000.log | sort -n  | uniq -c | sort -n -r | head -n 10
+   1924 219.232.105.98
+    437 219.232.105.104
+    329 220.248.15.74
+    297 54.222.138.168
+    236 219.232.105.102
+    159 49.95.188.36
+    136 54.222.132.12
+    116 54.222.133.100
+     67 219.232.105.99
+     43 101.81.225.57
 ```
 
+
+## 用python读取日志文件遍历的方式对ip字段排序(单线程)
 ```python
 import sys
 
@@ -47,4 +47,9 @@ def main(logfile):
 
 if __name__ == '__main__':
     print main(sys.argv[1])
+```
+
+## python多线程处理日志版本
+```
+
 ```
