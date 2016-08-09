@@ -35,7 +35,7 @@ kwargs {'age': 26, 'name': 'zhengys', 'sex': 'male'}
 ## 示例2
 ```python
 # 代码
-(*args, **kwargs):
+def A(*args, **kwargs):
     return B(*args, **kwargs)
 
 def B(*args, **kwargs):
@@ -49,9 +49,11 @@ A(*args, **kwargs)
 # 输出
 args= ('zhengys', 'china')
 kwargs= {'age': '26', 'tel': '132'}
-> 注意事项
+```
 
-```python
+## 注意
+
+```
 位置或关键字参数应该在最前面，其中，没有默认值的应该在有默认值的参数前面
 任意数量位置参数应该放在所有位置或关键字参数的后面
 任意数量关键字参数应该放在任意数量位置参数的后面
