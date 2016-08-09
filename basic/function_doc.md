@@ -9,8 +9,9 @@
     1. \*\*dict -> 关键字参数传递，key作为关键字，value作为值.
     2. \*tuple -> 位置参数.
 
-## 示例  
+## 示例1 
 
+1. 代码 
 ```python
 def func(a, b, c=0, *args, **kwargs):
     print 'a', a
@@ -20,15 +21,15 @@ def func(a, b, c=0, *args, **kwargs):
     print 'kwargs', kwargs
 ```
 
+1. 调用执行
 ```
-### 执行
 args = ('cn', 'henan', '13xxxxxx')
 dic = {'name' : 'zhengys', 'age' : 26, 'sex' : 'male'}
 func('sengled', 'bj', '10', *args, **dic)
 ```
 
+3. 输出
 ```
-# 输出
 a sengled
 b bj
 c 10
