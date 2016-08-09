@@ -60,16 +60,8 @@
     -  [实战socket编程](https://github.com/467754239/python/blob/master/socket/socket_doc.md)
 
 - 算法 
-    -  快排
-    -  冒泡
     -  [求一个list最大的两个值](https://github.com/467754239/python/blob/master/algorithm/list_sort.md)
     -  哈希
-
-- 数据结构
-    -  队列
-    -  栈
-    -  树
-    -  图
 
 - 网络爬虫
     - 思路
