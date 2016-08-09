@@ -1,4 +1,7 @@
 ## Nginx access.log
+
+> 处理日志文件,按ip字段进行排序.
+
 ```
 $ head -n 10 access-8000.log
 54.222.132.12 - - [2016-08-09T00:15:19+00:00] "POST /user/app/customer/AuthenCross.json HTTP/1.1" 200 213 "-" "Apache-HttpClient/4.5.2 (Java/1.6.0_45)" "-"
@@ -13,10 +16,7 @@ $ head -n 10 access-8000.log
 220.248.15.74 - - [2016-08-09T00:25:08+00:00] "GET /amazon-storage/download?bucketName=sengledimagebucket&filename=F59B7A3F03317289EFDC9648C4D507B0_motion_1470643977078_small.jpg HTTP/1.1" 200 12680 "-" "snap/1.1.53 CFNetwork/758.5.3 Darwin/15.6.0" "-"
 ```
 
-处理日志文件
-按ip字段进行排序
-
-## Shell
+> Shell
 ```
 $ awk '{ print $1 }' access-8000.log | uniq -c | sort -n -r | head -n 10
     261 219.232.105.98
@@ -35,9 +35,8 @@ $ awk '{ print $1 }' access-8000.log | uniq -c | sort -n -r | head -n 10
 
 ```python
 import sys
-import json
 
-def main(logfile, format=False):
+def main(logfile):
     ips = {}
     with open(logfile, 'r') as f:
         count = 1
@@ -48,12 +47,7 @@ def main(logfile, format=False):
             else:
                 ips[ip] = ips[ip] + 1
 
-    field_sorted = sorted(ips.items(), key=lambda x:x[1], reverse=True)
-
-    if format:
-        return json.dumps(field_sorted, indent=2)
-    else:
-        return field_sorted
+    return sorted(ips.items(), key=lambda x:x[1], reverse=True)
 
 if __name__ == '__main__':
     print main(sys.argv[1])
