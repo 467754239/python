@@ -1,4 +1,4 @@
-## 函数参数   
+## 参数的分类  
 1. 位置参数
 2. 关键字参数
 3. 默认参数
@@ -33,10 +33,22 @@ kwargs {'age': 26, 'name': 'zhengys', 'sex': 'male'}
 ```
 
 ## 示例2
-```
+```python
+# 代码
+(*args, **kwargs):
+    return B(*args, **kwargs)
 
-```
+def B(*args, **kwargs):
+    print 'args=', args
+    print 'kwargs=', kwargs
+# 执行
+args = ('zhengys', 'china')
+kwargs = {'tel' :'132', 'age' : '26'}
+A(*args, **kwargs)
 
+# 输出
+args= ('zhengys', 'china')
+kwargs= {'age': '26', 'tel': '132'}
 > 注意事项
 
 ```python
