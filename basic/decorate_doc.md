@@ -109,7 +109,40 @@ hello world.
 func
 ```
 
-###示例4
+### 示例4
+> 接收任意数量的可变长参数
+
+```python
+def decorate(func):
+    def wrapper(*args, **kwargs):
+        print 'wrapper function'
+        func(*args, **kwargs)
+    return wrapper 
+
+@decorate
+def func(*args, **kwargs):
+    print 'hello world.'
+    print 'args = ', args
+    print 'kwargs = ', kwargs
+
+kw = {'age' : '26'}
+func('zhengys', **kw)
+```
+
+使用：
+```
+# 调用
+kw = {'age' : '26'}
+func('zhengys', **kw)
+
+### 输出
+wrapper function
+hello world.
+args =  ('zhengys',)
+kwargs =  {'age': '26'}
+```
+
+### 示例5
 > 摘录 知乎pc大神  
 > 这个函数的作用在于可以给任意可能会hang住的函数添加超时功能，这个功能在编写外部API调用 、网络爬虫、数据库查询的时候特别有用  
 
@@ -153,7 +186,7 @@ slowfunc(10) #被终止
 TimeoutError                              Traceback (most recent call last)
 ```
 
-### 示例5
+### 示例6
 > 摘录 知乎pc大神  
 > 有时候出于演示目的或者调试目的，我们需要程序运行的时候打印出每一步的运行顺序 和调用逻辑。类似写bash的时候的bash -x调试功能,然后Python解释器并没有 内置这个时分有用的功能，那么我们就“自己动手，丰衣足食”。  
 
