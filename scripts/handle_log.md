@@ -1,4 +1,3 @@
-## 日志文件(Nginx access.log)
 ```
 $ head -n 10 access-8000.log
 54.222.132.12 - - [2016-08-09T00:15:19+00:00] "POST /user/app/customer/AuthenCross.json HTTP/1.1" 200 213 "-" "Apache-HttpClient/4.5.2 (Java/1.6.0_45)" "-"
@@ -29,7 +28,7 @@ $ head -n 10 access-8000.log
 ```
 
 
-## python单线程版本
+## 单线程
 ```python
 import sys
 
@@ -50,8 +49,12 @@ if __name__ == '__main__':
     print main(sys.argv[1])
 ```
 
-## python多线程版本
-> 这种多线程处理会存在丢失日志的风险，暂时还没有找到好的解决办法。
+## 多线程 
+> hadoop中map/reduce分治的思想
+
+> map的过程 将一个大的进行拆分成若干小份 分别计算.
+
+> reduce过程 对每个小份的计算结果 进行合并
 
 ```python
 #coding:utf-8
@@ -94,6 +97,7 @@ for ran in ranges:
 
 fd.close()
 ```
+
 ```
 #coding:utf-8
 
