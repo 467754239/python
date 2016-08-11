@@ -12,7 +12,7 @@ $ head -n 10 access-8000.log
 220.248.15.74 - - [2016-08-09T00:25:08+00:00] "GET /amazon-storage/download?bucketName=sengledimagebucket&filename=F59B7A3F03317289EFDC9648C4D507B0_motion_1470643977078_small.jpg HTTP/1.1" 200 12680 "-" "snap/1.1.53 CFNetwork/758.5.3 Darwin/15.6.0" "-"
 ```
 
-## 用shell的方式处理日志并对ip字段排序
+## 最简单的方式
 ```shell
 # awk '{ print $1 }' access-8000.log | sort -n  | uniq -c | sort -n -r | head -n 10
    1924 219.232.105.98
