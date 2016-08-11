@@ -37,3 +37,20 @@ current file position, an integer (may be a long integer).
 #译
 当前文件指针的位置，一个整型（也有可能是一个长整型）.
 ```
+
+
+- 示例
+
+```
+>>> f = open('/etc/passwd', 'r')
+
+# 移动文件指针到文件末尾，查看其占用了多少个字节数.
+>>> f.seek(0, 2)
+>>> f.tell()
+1381
+
+# 查看文件的第3个字符
+>>> f.seek(2, 0)
+>>> f.read(1)
+'o'
+```
