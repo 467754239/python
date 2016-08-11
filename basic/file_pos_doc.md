@@ -1,8 +1,8 @@
 ## 文件指针 
-> 核心：
+> 核心:  
 > 文件指针中的fd.seek和fd.tell.
 
-### fd.seek
+- fd.seek
 ```
 seek(offset[, whence]) -> None.  Move to new file position.
 
@@ -31,7 +31,7 @@ offset: 文件的读/写指针位置.
 whence: 这是可选的，默认为0，这意味着绝对的文件定位，其他值是1，这意味着当前的位置和2手段寻求相对寻求相对文件的结束.
 ```
 
-### fd.tell()
+- fd.tell()
 ```
 current file position, an integer (may be a long integer).
 #译
