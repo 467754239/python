@@ -38,7 +38,7 @@
 
 - 脚本
     - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
-    - [日志文件处理](https://github.com/467754239/python/blob/master/scripts/headle_log.md)
+    - [日志文件处理](https://github.com/467754239/python/blob/master/scripts/handle_log.md)
 
 - 工具包
     - [utils](https://github.com/467754239/python/blob/master/tools/db_utils)
