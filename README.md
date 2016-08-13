@@ -44,6 +44,10 @@
     - [主机信息采集](https://github.com/467754239/python/blob/master/scripts/moniItems_doc.md)
     - [日志文件处理](https://github.com/467754239/python/blob/master/scripts/handle_log.md)
 
+- [graphite](http://467754239.blog.51cto.com/4878013/1626736)
+
+- [CAP原理和应用](./cap/cap_doc.md)
+
 - 工具包
     - [utils](https://github.com/467754239/python/blob/master/tools/db_utils)
     - [mail](https://github.com/467754239/python/blob/master/tools/mail)
@@ -71,6 +75,3 @@
 - 大数据思想 
     -  map与reduce
 
-- [Graphite](http://467754239.blog.51cto.com/4878013/1626736)
-
-- [CAP原理和应用](./cap/cap_doc.md)
