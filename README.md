@@ -68,4 +68,4 @@
 - 大数据思想 
     -  map与reduce
 
-- CAP原理和应用[./cap/cap_doc.md]
+- [CAP原理和应用](./cap/cap_doc.md)
