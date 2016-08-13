@@ -46,10 +46,6 @@
     - [mail](https://github.com/467754239/python/blob/master/tools/mail)
     - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 
-- 网络
-    -  buffer与cache
-    -  cookie与session
-
 - 多线程、多进程及协程 
     - [原理](https://github.com/467754239/python/blob/master/concurrent_programming/principle.md)
     - [实战thread](https://github.com/467754239/python/blob/master/concurrent_programming/thread.md)
@@ -72,3 +68,4 @@
 - 大数据思想 
     -  map与reduce
 
+- CAP原理和应用[./cap/cap_doc.md]
