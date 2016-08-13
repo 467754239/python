@@ -28,12 +28,15 @@
     - [Queue](https://github.com/467754239/python/blob/master/builtin_module/queue_doc.md)
     - [subprocess](https://github.com/467754239/python/blob/master/builtin_module/subprocess_doc.md)
     - [logging](https://github.com/467754239/python/blob/master/builtin_module/logging_doc.md)
+    - [optparse](http://467754239.blog.51cto.com/4878013/1619323)
     - signal
     - re 
     - imp
     - requests
 
 - 第三方模块
+    - [paramiko](http://467754239.blog.51cto.com/4878013/1619166)
+    - [mongodb](http://467754239.blog.51cto.com/4878013/1692088)
 
 - [状态机](https://github.com/467754239/python/blob/master/state_machine/doc_01.md)
 
@@ -67,5 +70,7 @@
 
 - 大数据思想 
     -  map与reduce
+
+- [Graphite](http://467754239.blog.51cto.com/4878013/1626736)
 
 - [CAP原理和应用](./cap/cap_doc.md)
