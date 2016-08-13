@@ -1,11 +1,7 @@
-## 实现插入排序
+## 实现一个简单的插入排序
 
 ```
 #coding:utf-8
-
-'''
-实现一个简单的插入排序.
-'''
 
 import sys
 import logging
@@ -23,15 +19,18 @@ class SimpleInsertSort(object):
             logging.error("you must a number, %s" % e)
             return
         
+	# 第一次插入
         if len(self.ret) == 0:  
             self.ret.append(num)
             
+	# 第二次插入
         elif len(self.ret) == 1:    
             if num > self.ret[0]:    
                 self.ret.append(num)    
             else:    
                 self.ret.insert(0, num)
                 
+	# 第三次及第三次以后的任何插入
         elif len(self.ret) >= 2:    
             if num < self.ret[0]:    
                 self.ret.insert(0, num)   
@@ -42,9 +41,11 @@ class SimpleInsertSort(object):
                     self.ret.insert(index+1, num)
                     
     def flush_db(self):
+	# 可实现持久化存储
         pass
         
     def load_db(self):
+	# 加载到内存中
         pass
                     
     def show(self):
@@ -58,7 +59,7 @@ class SimpleInsertSort(object):
         self.load_db()
         action = raw_input('please input add or show or exit:')
         if action in self.menu:
-            self.menu[action]()
+            self.menu[action]()	# 实现switch的功能
         else:
             logging.error('input error, KeyError')
             
