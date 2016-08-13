@@ -67,6 +67,7 @@
 
 - 算法 
     -  [求一个list最大的两个值](https://github.com/467754239/python/blob/master/algorithm/list_sort.md)
+    -  [插入排序](./algorithm/insert_list_doc.md)
     -  哈希
 
 - 网络爬虫
