@@ -54,7 +54,8 @@ def main():
     old_ret = simple_merge()
     sorted_dict = sorted_dic(old_ret)
     res = merge_ranking(sorted_dict)
-    print res
+    return res
+    # return res[:10]
     
 if __name__ == "__main__":
     main()
