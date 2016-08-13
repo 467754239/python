@@ -68,6 +68,7 @@
 - 算法 
     -  [求一个list最大的两个值](./algorithm/list_sort.md)
     -  [插入排序](./algorithm/insert_list_sorted_doc.md)
+    -  [字符数量统计](./algorithm/wc_letter_doc.md)
     -  哈希
 
 - 网络爬虫
