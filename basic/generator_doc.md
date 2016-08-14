@@ -101,29 +101,9 @@ for n in gen:
     print n
 ```  
 
-> yield的应用场景 
+> 生成器的一个应用场景
 
 ```python
-#coding:utf-8
-
-class yrange(object):
-    def __init__(self, num):
-        self.num = num
-        self.initial_val= 0 
-        
-    def __iter__(self):
-        return self.next()
-
-    def next(self):
-        while self.initial_val < self.num:
-            self.initial_val += 1
-            yield self.initial_val
-
-gen = yrange(10)
-for n in gen:
-    print n
-```python
-# 示例4
 # coding:utf-8
 
 def read_file(fpath):
