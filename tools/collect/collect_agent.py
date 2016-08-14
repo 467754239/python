@@ -1,9 +1,3 @@
-## 采集主机信息
-> 主机名、系统负载、总计内存、使用内存、空闲内存、多个硬盘总计、当前时间戳  
-> 1. 返回值为json
-> 2. 单位由k换算成对应的M、G、T单位
-
-```python
 #coding:utf-8
 
 import re
@@ -12,6 +6,13 @@ import time
 import socket
 import logging
 
+
+'''
+采集主机信息
+主机名、系统负载、总计内存、使用内存、空闲内存、多个硬盘总计、当前时间戳  
+1. 返回值为json
+2. 单位由k换算成对应的M、G、T单位
+'''
 
 class hostinfo(object):
     def __init__(self):
@@ -111,13 +112,3 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG, format=FORMAT)
     data = hostinfo().runAllGet()
     logging.debug('data:%s', data)
-```
-
-> 代码执行结果
-
-```
-$ python moniItems.py
-WARNING: fdisk GPT support is currently new, and therefore in an experimental phase. Use at your own discretion.
-{'MemTotal': '3.68G', 'MemUsage': '3.36G', 'MemFree': '330.45M', '/dev/xvda': '8.19G', 'host': 'ip-172-30-29-108', 'loadavg': '0.00', 'time': 1469238194, '/dev/xvdb': '4.09G'}
-2016-07-23 01:43:14,595 moniItems.py line:109 DEBUG data : {'MemTotal': '3.68G', 'MemUsage': '3.36G', 'MemFree': '330.45M', '/dev/xvda': '8.19G', 'host': 'ip-172-30-29-108', 'loadavg': '0.00', 'time': 1469238194, '/dev/xvdb': '4.09G'}
-```

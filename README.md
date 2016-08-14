@@ -46,12 +46,12 @@
 - [CAP原理和应用](./cap/cap_doc.md)
 
 - 工具包
-    - [utils](./tools/db_utils)
+    - [db_utils](./tools/db_utils)
     - [mail](./tools/mail)
-    - [实现wc功能](./tools/wc_doc.md)
+    - [主机信息采集](./tools/collect)
+    - [日志文件处理](./tools/log)
+    - [实现wc功能](./tools/wc)
     - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
-    - [主机信息采集](./tools/moniItems_doc.md)
-    - [日志文件处理](./tools/handle_log.md)
 
 - 多线程、多进程及协程 
     - [原理](./concurrent_programming/principle.md)
