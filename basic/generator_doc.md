@@ -3,14 +3,13 @@
 ### 定义
 ```
 生成器是一次生成一个值的特殊类型函数。可以将其视为可恢复函数。调用该函数将返回一个可用于生成连续 x 值的生成器.
-
 简单的说就是在函数的执行过程中，yield语句会把你需要的值返回给调用生成器的地方，
 然后退出函数，下一次调用生成器函数的时候又从上次中断的地方开始执行，
 而生成器内的所有变量参数都会被保存下来供下一次使用。
 ```
 
 ### 特点
-```
+```python
 1. __iter__() 	# 返回iterators对象本身
 2. next()	# 每当next方法被调用时，返回下一个值直到StopIteration异常被抛出结束.
 ```
@@ -35,8 +34,11 @@ Traceback (most recent call last):
 StopIteration
 ```
 ### 创建生成器   
+
+> 示例1  
+> 用class的方式实现xrange的功能.
+
 ```python
-# 示例1
 #coding:utf-8
 
 class yrange(object):
@@ -58,8 +60,10 @@ print yx
 
 ```   
 
+> 示例2  
+> 用yield实现xrange的功能.
+
 ```python
-# 示例2
 #coding:utf-8
 
 def create_generator(N):
@@ -73,8 +77,10 @@ print cg
 
 ```  
 
+> 示例3  
+> 用class和yield的方式实现xrange的功能.
+
 ```python
-# 示例3
 #coding:utf-8
 
 class yrange(object):
@@ -95,6 +101,27 @@ for n in gen:
     print n
 ```  
 
+> yield的应用场景 
+
+```python
+#coding:utf-8
+
+class yrange(object):
+    def __init__(self, num):
+        self.num = num
+        self.initial_val= 0 
+        
+    def __iter__(self):
+        return self.next()
+
+    def next(self):
+        while self.initial_val < self.num:
+            self.initial_val += 1
+            yield self.initial_val
+
+gen = yrange(10)
+for n in gen:
+    print n
 ```python
 # 示例4
 # coding:utf-8
@@ -110,7 +137,6 @@ def read_file(fpath):
 ```
 
 ### 为什么会出现生成器? 
-
 ```
 避免一次性或者无限制的占用较大的内存.
 ```
