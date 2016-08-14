@@ -15,8 +15,7 @@
 2. next()	# 每当next方法被调用时，返回下一个值直到StopIteration异常被抛出结束.
 ```
 
-(3) 语言自带的生成器 
-
+### 语言自带的生成器 
 ```python
 >>> gen = xrange(3)
 >>> dir(gen)			# 具有__iter__方法.
@@ -35,8 +34,7 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
 ```
-> 创建生成器   
-
+### 创建生成器   
 ```python
 # 示例1
 #coding:utf-8
@@ -111,7 +109,7 @@ def read_file(fpath):
             yield block
 ```
 
-> 生成器解决了什么问题？
+### 为什么会出现生成器? 
 
 ```
 避免一次性或者无限制的占用较大的内存.
