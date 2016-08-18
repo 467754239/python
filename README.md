@@ -41,17 +41,11 @@
 
 - [状态机](./state_machine.md)
 - [graphite](http://467754239.blog.51cto.com/4878013/1626736)
-- [CAP原理和应用](./cap/cap_doc.md)
-- 工具包
-    - [db_utils](./tools/db_utils)
-    - [mail](./tools/mail)
-    - [主机信息采集](./tools/collect)
-    - [日志文件处理](./tools/log)
-    - [实现wc功能](./tools/wc)
-    - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
+- [CAP原理和应用](./cap.md)
+- [脚本](./scripts)
 - [多线程、多进程、协程](./threads)
 - [网络编程socket](./socket)
 - [算法](./algorithm)
 - [网络爬虫](./spider)
-- 大数据思想
+- [大数据思想](./bigdata.md)
 
