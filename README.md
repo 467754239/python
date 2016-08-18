@@ -53,12 +53,9 @@
     - [实现wc功能](./tools/wc)
     - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 
-- 多线程、多进程及协程 
-    + [原理、理论、实战](./threads)
+- [多线程、多进程及协程](./threads)
 
-- 高级网络编程socket
-    -  原理
-    -  [实战socket编程](./socket/socket_doc.md)
+- [高级网络编程socket](./socket)
 
 - 算法 
     -  [求一个list最大的两个值](./algorithm/list_sort.md)
