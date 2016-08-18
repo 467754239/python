@@ -1,5 +1,5 @@
 ## Python Outline
-> 努力上传中 ......
+> 关注领域
 
 - 基础
     -  [python2.7](./basic/python2.7.md)
@@ -34,9 +34,11 @@
     - re 
     - imp
     - requests
+    - 
 - 第三方模块
     - [paramiko](http://467754239.blog.51cto.com/4878013/1619166)
     - [mongodb](http://467754239.blog.51cto.com/4878013/1692088)
+
 - [状态机](./state_machine.md)
 - [graphite](http://467754239.blog.51cto.com/4878013/1626736)
 - [CAP原理和应用](./cap.md)
