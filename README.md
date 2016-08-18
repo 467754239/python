@@ -54,11 +54,7 @@
     - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 
 - 多线程、多进程及协程 
-    - [原理](./concurrent_programming/principle.md)
-    - [实战thread](./concurrent_programming/thread.md)
-    - [实战threading](./concurrent_programming/threading.md)
-    - [实战协程](./concurrent_programming/gevent.md) 
-    - [参考文章](./concurrent_programming/reference_doc.md)
+    + [原理、理论、实战](./threads)
 
 - 高级网络编程socket
     -  原理
