@@ -39,12 +39,9 @@
     - [paramiko](http://467754239.blog.51cto.com/4878013/1619166)
     - [mongodb](http://467754239.blog.51cto.com/4878013/1692088)
 
-- [状态机](./state_machine/doc_01.md)
-
+- [状态机](./state_machine.md)
 - [graphite](http://467754239.blog.51cto.com/4878013/1626736)
-
 - [CAP原理和应用](./cap/cap_doc.md)
-
 - 工具包
     - [db_utils](./tools/db_utils)
     - [mail](./tools/mail)
@@ -52,21 +49,9 @@
     - [日志文件处理](./tools/log)
     - [实现wc功能](./tools/wc)
     - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
-
-- [多线程、多进程及协程](./threads)
-
-- [高级网络编程socket](./socket)
-
-- 算法 
-    -  [求一个list最大的两个值](./algorithm/list_sort.md)
-    -  [插入排序](./algorithm/insert_sorted_doc.md)
-    -  [字符数量统计](./algorithm/wc_letter_doc.md)
-    -  哈希
-
-- 网络爬虫
-    - 思路
-    - [实战](./web_spider/web_spider_doc.md)
-
-- 大数据思想 
-    -  map与reduce
+- [多线程、多进程、协程](./threads)
+- [网络编程socket](./socket)
+- [算法](./algorithm)
+- [网络爬虫](./spider)
+- 大数据思想
 

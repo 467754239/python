@@ -105,6 +105,7 @@ def state_factory():
     return random.randint(0, 1)
 
 if __name__ == "__main__":
+
        world = World()
        world.init()
        world.run()

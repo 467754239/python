@@ -1,13 +1,102 @@
-## 统计字符数量之后，打印出现次数前10的字符
+# algorithm #
 
-- 打印前十
-- 考虑并列排名
-
+## 求一个list最大的两个值  ##
 ```
-read_me = '''first of all, i want make it clear that i can not claim undellllllrstddddddddddddanding this holy book in just a few weeks, and i would not dare comment on this sacred book, in addition, i don't think i can give you a full picture of the holy bible in just few words.i can not preach anything here. what i want to do here is to express ffffffffffffffffffffmy understanding by sharing two events described in this book. the fist story i want to share is abandoned tower of babel.according to the bibel,people use the same language to communicate with each other in ancient times.with the soaring vanity,they decided to build a heaven-reaching tower to show off their achievement, god knows, he change the human language into different kinds and make it difficult for people to communicate with each other,hence the failure of building tower of babel.this story tells people,never do things in selfishness, but make a life out of enternal glory.the other story,before jesus christ was crucified,he said, father,forgive them, for they know not what they do. with great love, he shouldered all the sins of people. what can we learn from this story?we live in this world thanks to the love of god, for this reanson, we should make our lives glorious to honor our god.finally,i want to sum up by saying that only if we put our lives in the eternal love of god,can we live a perfect life, and what you appealed is what god expected!'''
+list = [1,2,3,2,12,3,1,3,21,2,2,3,4111,22,3333,444,111,4,5,777,65555,45,33,45]
+
+max_val = list[0]
+
+for x in list[1:]:
+    if x > max_val:
+        sec_val = max_val
+        max_val = x
+    else:
+        pass
+        
+print max_val
+print sec_val
 ```
 
-> 示例代码
+## 实现插入排序 ##
+
+```python
+#coding:utf-8
+
+import sys
+import logging
+
+class SimpleInsertSort(object):
+    def __init__(self):
+        self.menu = {"add" : self.add, "show" : self.show, "exit" : self.exit}
+        self.ret = []
+
+    def add(self):
+        try:
+            num = input('please input a number: ')
+            logging.debug("input number : %s" % num)
+        except NameError as e:
+            logging.error("you must a number, %s" % e)
+            return
+
+        # 1 insert 
+        if len(self.ret) == 0:  
+            self.ret.append(num)
+
+        # 2 insert
+        elif len(self.ret) == 1:    
+            if num > self.ret[0]:    
+                self.ret.append(num)    
+            else:    
+                self.ret.insert(0, num)
+
+        # 3+ insert
+        elif len(self.ret) >= 2:    
+            if num < self.ret[0]:    
+                self.ret.insert(0, num)   
+            elif num > self.ret[-1]:    
+                self.ret.append(num)
+            for index in range(len(self.ret)):        
+                if num > self.ret[index] and num < self.ret[index+1]:   
+                    self.ret.insert(index+1, num)
+
+    def flush_db(self):
+        # 可实现持久化存储
+        pass
+
+    def load_db(self):
+        # 加载到内存中
+        pass
+
+    def show(self):
+        logging.debug(self.ret)
+
+    def exit(self):
+        self.flush_db()
+        sys.exit(0)
+
+    def process(self):
+        self.load_db()
+        action = raw_input('please input add or show or exit: ')
+        if action in self.menu:
+            self.menu[action]() # 实现switch的功能
+        else:
+            logging.error('input error, KeyError')
+
+    def run(self):
+        while True:
+            self.process()
+
+if __name__ == "__main__":
+    FORMAT = '%(asctime)-15s %(levelname)s %(message)s '
+    logging.basicConfig(level=logging.DEBUG, format=FORMAT)
+    sis = SimpleInsertSort()
+    sis.run()
+```
+
+## 统计字符数量之后，打印出现次数前10的字符  ##
+
+> 打印前十  
+> 考虑并列排名  
 
 ```python
 #coding:utf-8
@@ -72,14 +161,6 @@ def main():
 if __name__ == "__main__":
     print main()
 ```
-
-> 执行结果
-
-```python
-[{'No 1': {' ': 247}}, {'No 2': {'e': 131}}, {'No 3': {'t': 103}}, {'No 4': {'o': 96}}, {'No 5': {'i': 86}}, {'No 6': {'a': 77, 'n': 77}}, {'No 7': {'h': 66}}, {'No 8': {'s': 58}}, {'No 9': {'r': 55, 'l': 55, 'd': 55, 'f': 55}}, {'No 10': {'c': 32, 'u': 32, 'w': 32}}]
-```
-
-> 格式化输出
 
 ```python
 名次: No 1, 单词和次数: {' ': 247}
