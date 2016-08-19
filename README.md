@@ -1,4 +1,4 @@
-## Python Outline
+## Python 2.7
 > 关注领域
 
 - 基础
@@ -20,7 +20,7 @@
     -  [实现switch](./basic/switch_doc.md)
     -  [pyc文件](./basic/pyc_doc.md)
     -  [#!](./basic/shebang_doc.md)
-    -  [\__name__与\__main__](./basic/name_main_doc.md)
+    -  [\_\_name\_\_与\_\_main\_\_](./basic/name_main_doc.md)
 
 - 内置模块
     - [os](./builtin_module/os_doc.md)
@@ -36,15 +36,16 @@
     - requests
     
 - 第三方模块
-    - [paramiko](http://467754239.blog.51cto.com/4878013/1619166)
+    + [paramiko](http://467754239.blog.51cto.com/4878013/1619166)
+    
+- 哎呦不错哦
+    + [状态机](./state_machine.md)
+    + [脚本](./scripts)
+    + [CAP原理和应用](./cap.md)
+    + [多线程、多进程、协程](./threads)
+    + [网络编程socket](./socket)
+    + [算法](./algorithm)
+    + [网络爬虫](./spider)
+    + [大数据思想](./bigdata.md)
 
-- [状态机](./state_machine.md)
-- [graphite](http://467754239.blog.51cto.com/4878013/1626736)
-- [CAP原理和应用](./cap.md)
-- [脚本](./scripts)
-- [多线程、多进程、协程](./threads)
-- [网络编程socket](./socket)
-- [算法](./algorithm)
-- [网络爬虫](./spider)
-- [大数据思想](./bigdata.md)
-
+- [学习资料](./books)
