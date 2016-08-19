@@ -1,5 +1,6 @@
 # algorithm #
 
+- [hash](./hash.md)
 - [冒泡排序](./algorithm/th01.py)
 - [快速排序](./algorithm/th02.py)
 - 练习
@@ -8,4 +9,5 @@
     + [求list最大两个数值](./algorithm/th101.py)
 
 #### 参考资料 ####
-- [九大排序算法](http://python.jobbole.com/86119/)
+- [八大排序算法](http://python.jobbole.com/86119/)
+- [八大排序算法的Python实现](https://segmentfault.com/a/1190000003788339)
