@@ -16,7 +16,7 @@ Python 2.7
 *  [装饰器](./basic/decorate.md)
 *  [上下文管理器](./basic/context_manager.md)
 *  [file与open](./basic/file.md)
-*  [file指针](./basic/file_pos_doc.md)
+*  [file指针](./basic/file_pos.md)
 *  [生成器、迭代器](./basic/generator.md)
 *  [异常处理](./basic/exception.md)
 *  [实现switch](./basic/switch.md)
