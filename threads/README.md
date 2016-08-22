@@ -156,7 +156,11 @@ if __name__ == '__main__':
     print 'main thread is over'
 ```
 
+## 协程 ##
+
+[官方文档](http://www.gevent.org/contents.html)  
+[廖雪峰gevent](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001407503089986d175822da68d4d6685fbe849a0e0ca35000)
 
 
-### 参考资料 ###
+## 参考资料
 [Python 中的进程、线程、协程、同步、异步、回调](https://segmentfault.com/a/1190000001813992)

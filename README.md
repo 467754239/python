@@ -25,6 +25,7 @@ Python 2.7
 *  [pyc文件](./basic/pyc_doc.md)
 *  [#!](./basic/shebang_doc.md)
 *  [\_\_name\_\_与\__main\_\_](./basic/name_main_doc.md)
+*  [python实用技巧](./basic/practical_skills.md)
 
 #### 内置模块
 * [os](./builtin_module/os_doc.md)
@@ -57,3 +58,5 @@ Python 2.7
 
 #### 学习资料
 * [编程规范](./books/编程规范)
+* [Python进阶](./books/interpy-zh.pdf)
+* [Google开源项目风格指南](http://zh-google-styleguide.readthedocs.io/en/latest/contents/)
