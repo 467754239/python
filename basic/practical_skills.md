@@ -1,12 +1,15 @@
 Python 实用技巧
 ======
 - enumerate
-- 一行式
+- 条件赋值
+- 变量值交换
+- list切片
+- dict的get方法
 
 
 
 ## enumerate ##
-翻译
+语法及翻译
 ```
 enumerate(iterable[, start]) -> iterator for index, value of iterable
 
@@ -75,12 +78,115 @@ for index, item in enumerate(a, start):
 ```
 
 
-## 一行式 ##
+## 条件赋值 ##
 ```python
+a = 0
+ret = True if a == 0 else False
+print ret
+
+# 执行输出
+True
+```
+
+
+## 变量值交换 ##
+```
 a = 3
 b = 5
-c = a if a > b else b
+print a, b
+a, b = b, a
+print a, b
 ```
+
+## list切片 ##
+> slice(start, stop[, step])
+
+```
+l = range(1, 11)
+
+# 列表所有元素
+> print l
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# 列表切割并指定步长为2.
+> print l[::2]
+[1, 3, 5, 7, 9]
+
+# 反转列表.
+> print l[::-1]
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+```
+
+
+## dict的get方法 ##
+语法及翻译
+```
+D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
+
+#译
+如果k在字典D中，return D[k]，否则d. d的默认值是None.
+```
+
+用法示例1
+```
+d = {'name':'zhengys', 'age':26, 'addr':'cn'}
+
+print 'd:', d
+print 'name:', d['name']
+
+try:
+    print d['tel']  # key not in d, raise KeyError.
+except KeyError as e:
+    print 'tel error'
+
+print 'tel:', d.get('tel', '1326007198x')
+print 'd:', d
+
+# 执行结果
+d: {u'age': 26, u'name': u'zhengys', u'addr': u'cn'}
+name: zhengys
+tel error
+tel: 1326007198x
+d: {u'age': 26, u'name': u'zhengys', u'addr': u'cn'}
+```
+
+用法示例2
+> 统计日志文件中每个ip出现的次数
+
+```
+def func1(logfile):     # 认为这种方式更巧妙.
+    d = {}
+    with open(logfile, 'r') as f:
+        for line in f:
+            ip = line.split()[0]
+            d[ip] = d.get(ip, 0) + 1
+    return d
+
+def func2(logfile):
+    d = {}
+    with open(logfile, 'r') as f:
+        for line in f:
+            ip = line.split()[0]
+            if ip not in d:
+                d[ip] = 1
+            else:
+                d[ip] = d[ip] + 1
+    return d
+
+if __name__ == '__main__':
+    logfile = 'access-8000.log'
+    func1(logfile)
+    func2(logfile)
+
+# 执行结果
+{'93.174.93.136': 1, '54.222.132.12': 1, '198.211.17.155': 1, '54.222.138.168': 2, '219.232.105.110': 29, '163.172.173.181': 1}
+{'93.174.93.136': 1, '54.222.132.12': 1, '198.211.17.155': 1, '54.222.138.168': 2, '219.232.105.110': 29, '163.172.173.181': 1}
+```
+
+
+
+
+
 
 
 

@@ -21,7 +21,7 @@ Python 2.7
 *  [异常处理](./basic/exception.md)
 *  [实现switch](./basic/switch.md)
 *  [实用技巧](./basic/practical_skills.md)
-*  [other](./basic/other.md)
+*  [其它](./basic/other.md)
 
 #### 内置模块
 * [os](./builtin_module/os.md)
@@ -31,6 +31,7 @@ Python 2.7
 * [logging](./builtin_module/logging.md)
 * [optparse](http://467754239.blog.51cto.com/4878013/1619323)
 * [csv](./builtin_module/csv.md)
+* [collections](./builtin_module/collections.md)
 * signal
 * re 
 * imp
