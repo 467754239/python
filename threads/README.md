@@ -141,7 +141,7 @@ import threading
 
 class Th(object):
     def __init__(self):
-    pass
+        pass
 
     def process(self, N):
         print 'Th is start.'
