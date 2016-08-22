@@ -46,7 +46,7 @@ Python 2.7
 * [网络编程socket](./socket)
 * [算法](./algorithm)
 * [网络爬虫](./spider)
-* [大数据思想](./bigdata.md)
+* 大数据思想
 
 #### Web框架
 * [Flask](./flask/README.md)
