@@ -18,13 +18,10 @@ Python 2.7
 *  [一行式](./basic/oneline_doc.md)
 *  [file与open](./basic/file.md)
 *  [file指针](./basic/file_pos_doc.md)
-*  [生成器](./basic/generator_doc.md)
+*  [生成器、迭代器](./basic/generator_doc.md)
 *  [迭代器](./basic/iterators_doc.md)
 *  [异常处理](./basic/exception_doc.md)
 *  [实现switch](./basic/switch_doc.md)
-*  [pyc文件](./basic/pyc_doc.md)
-*  [#!](./basic/shebang_doc.md)
-*  [\_\_name\_\_与\__main\_\_](./basic/name_main_doc.md)
 *  [python实用技巧](./basic/practical_skills.md)
 
 #### 内置模块
@@ -38,7 +35,6 @@ Python 2.7
 * signal
 * re 
 * imp
-* requests
     
 #### 第三方模块
 * [paramiko](http://467754239.blog.51cto.com/4878013/1619166)

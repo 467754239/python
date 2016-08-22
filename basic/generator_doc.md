@@ -10,15 +10,15 @@
 
 ### 特点
 ```python
-1. __iter__() 	# 返回iterators对象本身
-2. next()	# 每当next方法被调用时，返回下一个值直到StopIteration异常被抛出结束.
+__iter__() 	# 返回iterators对象本身
+next() # 每当next方法被调用时，返回下一个值直到StopIteration异常被抛出结束.
 
 简单的说就是在函数的执行过程中，yield语句会把你需要的值返回给调用生成器的地方，
 然后退出函数，下一次调用生成器函数的时候又从上次中断的地方开始执行，
 而生成器内的所有变量参数都会被保存下来供下一次使用。
 ```
 
-### 语言自带的生成器 
+### 自带的生成器 
 ```python
 >>> gen = xrange(3)
 >>> dir(gen)			# 具有__iter__方法.
@@ -123,4 +123,15 @@ def read_file(fpath):
 ### 为什么会出现生成器? 
 ```
 避免一次性或者无限制的占用较大的内存.
+```
+
+### 对比 ###
+```
+generator 生成器
+iterators 迭代器
+iterables 可迭代的
+
+可以直接作用于for循环的对象统称为可迭代对象(Iterable)
+可以被next()函数调用并不断返回下一个值的对象称为迭代器(Iterator)
+所有的Iterable均可以通过内置函数iter()来转变为Iterator
 ```
