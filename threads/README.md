@@ -157,10 +157,28 @@ if __name__ == '__main__':
 ```
 
 ## 协程 ##
+概念性
+```
+协程不同于线程，线程是抢占式的调度，而协程是协同式的调度，协程需要自己做调度。
 
-[官方文档](http://www.gevent.org/contents.html)  
-[廖雪峰gevent](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001407503089986d175822da68d4d6685fbe849a0e0ca35000)
+协程没有线程的安全问题，一个进程可以同时存在多个协程，但是只有一个协程是激活的，而且协程的激活和休眠又程序员通过编程来控制，
+而不是操作系统控制的，
+
+协程是用户空间线程，操作系统其存在一无所知，所以需要用户自己去调度，用来执行协程多任务非常合适。
+```
+
+简介
+```
+gevent is a coroutine-based Python networking library that uses greenlet to provide a high-level synchronous API on top of the libevent event loop.
+
+#译:
+gevent一个基于协程的Python网络库，依赖于libevent的event loop使用greenlet提供高级同步API。
+
+gevent给了你线程,但是没有使用线程
+```
 
 
 ## 参考资料
-[Python 中的进程、线程、协程、同步、异步、回调](https://segmentfault.com/a/1190000001813992)
+[Python 中的进程、线程、协程、同步、异步、回调](https://segmentfault.com/a/1190000001813992)  
+[gevent官方文档](http://www.gevent.org/contents.html)  
+[廖雪峰gevent](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001407503089986d175822da68d4d6685fbe849a0e0ca35000)
