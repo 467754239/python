@@ -35,8 +35,8 @@ Python 2.7
 * imp
     
 #### 第三方模块
+* [elasticsearch](./elasticsearch)
 * [paramiko](http://467754239.blog.51cto.com/4878013/1619166)
-* [elasticsearch](./elasticsearch/README.md)
     
 #### 哎呦呦
 * [脚本](./scripts)
