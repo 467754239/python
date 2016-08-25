@@ -1,4 +1,14 @@
 ## elasticsearch api
+[es api](http://elasticsearch-py.readthedocs.io/en/latest/index.html)
+```
+# 默认配置
+硬件配置
+    2核cpu
+    8G内存
+    普通硬盘
+elasticsearch bulk 3000/s
+```
+
 
 
 ## elasticsearch优化参考文章

@@ -11,7 +11,7 @@ from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk, parallel_bulk
 
 class elasctic(object):
-    def __init__(self, host='127.0.0.1', port=9200, flush_size=2000):
+    def __init__(self, host='127.0.0.1', port=9200, flush_size=20000):
         self.host = host
         self.port = port 
         self.conn = None
@@ -23,10 +23,9 @@ class elasctic(object):
                         {'port' : self.port}
                         ])
 
-    def bulkdata(self, data):
+    def bulk_bigdata(self, data):
         self.connect()
-        # bulk(client=self.conn, actions=data, stats_only=True)
-        parallel_bulk(client=self.conn, actions=data, thread_count=4, chunk_size=500)
+        return bulk(client=self.conn, actions=data, stats_only=True)
 
 
 class Redis(object):
@@ -61,33 +60,36 @@ class Redis(object):
 
     def process(self, key):
         self.connect()
-        
         cache = []
         interval = 5 
 
+        logging.info('%s running.' % sys.argv[0])
         while True:
             length = self.get_queue_length(key)
             if length == 0:
-                logging.debug('key:%s, pop finish.' % self.key)
+                logging.debug('key:%s, pop finish.' % key)
                 time.sleep(interval)
+                continue
             else:
                 value_str = self.pop_from_redis(key)
                 format_record = self.format_data(value_str)
                 cache.append(format_record)
-
-                if len(cache) == self.es.flush_size:
-                    time.sleep(interval)
-                    self.es.bulkdata(cache)
-                    logging.debug('flush_size:%s, bulk data to es finish.' % self.es.flush_size)
+                if len(cache) == int(self.es.flush_size):
+                    start = int(time.time())
+                    logging.info('flush_size:%d, start_timestamp: %d.' % (self.es.flush_size, start))
+                    sucess_num, error_num = self.es.bulk_bigdata(cache)
+                    end = int(time.time())
+                    logging.info('flush_size:%d, stop_timestamp: %d.' % (self.es.flush_size, end))
+                    logging.info('flush_size:%d, consume time:%ds, execute result sucess_number:%s, error_number:%s' % (self.es.flush_size, end-start, sucess_num, error_num))
                     cache = []
                     continue
+            
                 
-
 def main():
     r = Redis(host='127.0.0.1', port=6380)
     r.process("logstash:redis")
 
 if __name__ == '__main__':
     FORMAT = '%(asctime)-15s %(filename)s line:%(lineno)d %(levelname)s %(message)s'
-    logging.basicConfig(level=logging.DEBUG, format=FORMAT)
+    logging.basicConfig(level=logging.INFO, format=FORMAT)
     main()
