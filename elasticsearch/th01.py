@@ -27,7 +27,6 @@ class elasctic(object):
         self.connect()
         return bulk(client=self.conn, actions=data, stats_only=True)
 
-
 class Redis(object):
     def __init__(self, host='127.0.0.1', port=6379, db=0):
         self.host = host
