@@ -1,9 +1,8 @@
 Python 2.7
 ============================
-
 [![Build Status](https://travis-ci.org/justjavac/free-programming-books-zh_CN.svg?branch=master)](https://travis-ci.org/justjavac/free-programming-books-zh_CN)
 
-#### 基础
+###### 基础
 *  [python2.7](./basic/python2.7.md)
 *  [pip](./basic/pip.md)
 *  [ipython](./basic/ipython.md)
@@ -21,7 +20,7 @@ Python 2.7
 *  [实用技巧](./basic/practical_skills.md)
 *  [其它](./basic/other.md)
 
-#### 内置模块
+###### 内置模块
 * [os](./builtin_module/os.md)
 * [imp](./builtin_module/imp.md)
 * [Queue](./builtin_module/queue.md)
@@ -34,10 +33,10 @@ Python 2.7
 * re 
 * imp
     
-#### 第三方模块
+###### 第三方模块
 * [elasticsearch](./elasticsearch)
     
-#### 哎呦呦
+###### 哎呦呦
 * [脚本](./scripts)
 * [CAP原理和应用](./cap)
 * [多线程、多进程、协程](./threads)
@@ -46,11 +45,11 @@ Python 2.7
 * [网络爬虫](./spider)
 * 大数据思想
 
-#### Web框架
+###### Web框架
 * [Flask](./flask/README.md)
 * tornado
 
-#### 学习资料
+###### 学习资料
 * [编程规范](./books/编程规范)
 * [Python进阶](./books/interpy-zh.pdf)
 * [Google开源项目风格指南](http://zh-google-styleguide.readthedocs.io/en/latest/contents/)

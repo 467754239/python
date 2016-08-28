@@ -65,9 +65,9 @@ def runAllGet():
     msgInfo = {
         'Host' : getHost(),
         'LoadAvg' : getLoadAvg() ,
-        'MemTotal' : int(getMemTotal()) / 1024 ,
-        'MemUsage' :int( getMemUsage()) / 1024  ,
-        'MemFree' : int(getMemFree()) / 1024 ,
+        'MemTotal' : int(getMemTotal()) / 1024,
+        'MemUsage' :int(getMemUsage()) / 1024,
+        'MemFree' : int(getMemFree()) / 1024,
         'Time' : getTime(),
         'user_define' : random.randint(1, 1000)
         }
