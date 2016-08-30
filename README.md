@@ -36,14 +36,16 @@ Python 2.7
 ###### 第三方模块
 * [elasticsearch](./elasticsearch)
     
-###### 哎呦呦
+###### 实战应用
 * [脚本](./scripts)
+* [simplecmdb](./simplecmdb)
+* [nagios插件](./nagios)
+* [工具包](./opstools)
 * [CAP原理和应用](./cap)
 * [多线程、多进程、协程](./threads)
 * [网络编程socket](./socket)
 * [算法](./algorithm)
 * [网络爬虫](./spider)
-* 大数据思想
 
 ###### Web框架
 * [Flask](./flask/README.md)

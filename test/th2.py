@@ -1,14 +1,24 @@
 #coding:utf-8
+from __future__ import unicode_literals
 
-L = ['ab', 'abc', 'cc', 'ac', 'cc', 'ba', 'abc']
+list = [100, 104, 103, 200, 10, 1, 900, 100002, 9090932, 200, 100, 1, 0, 90]
 
-'''
-前提：不使用python的内置去重方法.
-1. 求出列表中哪些元素出现2次及2次以上.
-'''
+def quick(list):
+    if len(list) <= 1:
+        return list
 
-ret = []
-for item in L:
-    if L.count(item) >= 2:
-        ret.append(item)
-print ret
+    left, right, middle = [], [], []
+
+    for x in list:
+        if x < list[0]:
+            left.append(x)
+        elif x > list[0]:
+            right.append(x)
+        else:
+            middle.append(x)
+
+    left = quick(left)
+    right = quick(right)
+    return left + middle + right
+
+print quick(list)
