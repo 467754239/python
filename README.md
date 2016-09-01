@@ -38,8 +38,6 @@ Python 2.7
     
 ###### 实战应用
 * [脚本](./scripts)
-* [simplecmdb](./simplecmdb)
-* [nagios插件](./nagios)
 * [工具包](./opstools)
 * [CAP原理和应用](./cap)
 * [多线程、多进程、协程](./threads)

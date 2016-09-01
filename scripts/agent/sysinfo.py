@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 import re
 import sys
 import time
-import random
 import socket
 import logging
 import requests
@@ -70,7 +69,7 @@ def get_device_info():
 def get_disk_info():
     dev_white = ['/dev/xvda']
 
-    cmd = 'sudo fdisk -l | grep "磁盘" | egrep -v "gpt|dos|磁盘标识符"'
+    cmd = '''sudo fdisk -l | grep "磁盘" | egrep -v "gpt|dos|磁盘标识符"'''
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True)
     read_data = p.stdout.read()
 
@@ -123,6 +122,10 @@ def execute(cmd):
     p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     return p.stdout.read()
 
+def send():
+    url = ''
+    r = requests.post(url=url, data=data)
+
 def run():
     data = {}
     data['hostname'] = get_hostname()
@@ -136,10 +139,6 @@ def run():
     data.update(get_rel_data())
     
     #send(data)
-
-def send():
-    url = ''
-    r = requests.post(url=url, data=data)
 
 if __name__ == '__main__':
     run()
