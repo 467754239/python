@@ -43,9 +43,8 @@ Python 2.7
 * [工具包](./opstools)
 * [CAP原理和应用](./cap)
 * [多线程、多进程、协程](./threads)
-* [网络编程socket](./socket)
+* [Socket网络编程](./socket)
 * [算法](./algorithm)
-* [网络爬虫](./spider)
 
 ###### Web框架
 * [Flask](./flask/README.md)
