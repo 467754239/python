@@ -46,7 +46,7 @@ Python 2.7
 * [网络爬虫](./spider)
 
 ###### Web框架
-* [Flask](./flask/README.md)
+* [Flask](./flask)
 * tornado
 
 ###### 学习资料
