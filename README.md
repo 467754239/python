@@ -47,8 +47,6 @@ Python 2.7
 
 ###### Web框架
 * [Flask](./flask/README.md)
-    - [jsonrpc](./flask/jsonrpc.md)
-    - [restful](./flask/restful.md)
 * tornado
 
 ###### 学习资料
