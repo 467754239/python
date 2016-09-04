@@ -44,7 +44,6 @@ Python 2.7
 * [多线程、多进程、协程](./threads)
 * [网络编程socket](./socket)
 * [算法](./algorithm)
-* [网络爬虫](./spider)
 
 ###### Web框架
 * [Flask](./flask)
