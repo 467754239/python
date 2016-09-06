@@ -1,7 +1,7 @@
 ## Flask
 
-- [jsonrpc api](./jsonrpc)
-- [restful api](./restful)
+- [jsonrpc api](./api)
+- [restful api](./api)
 - [flask.request.method](./request_method.md)
 
 
