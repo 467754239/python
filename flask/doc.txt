@@ -1,0 +1,47 @@
+## 学习规划
+第一部分
+    1. 安装                   # 09.07看完
+    2. 程序的基本结构         # 09.07看完
+    3. 模板
+    4. Web表单
+    5. 数据库
+    6. 电子邮件
+    7. 大型程序的结构
+
+
+
+
+# Flask
+http://flask.pocoo.org/
+
+小型框架
+微框架
+
+可扩展的框架
+
+# 依赖
+路由、调试、web服务网关接口(Web Server Gateway Interface，WSGI)；
+子系统由Werkzeug（http://werkzeug.pocoo.org/）提供；
+模板系统由Jinja2（http://jinja.pocoo.org/）提供。
+Werkzeug 和Jinjia2 都是由Flask 的核心开发者开发而成。
+
+
+$ git clone https://github.com/miguelgrinberg/flasky.git
+$ cd flasky
+$ git checkout 1a
+
+# Python 2.7
+
+virtualenv venv
+
+source venv/bin/activate
+deactivate
+
+
+request
+redirect
+abort
+render_template
+
+
+

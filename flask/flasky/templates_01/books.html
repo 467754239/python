@@ -1,0 +1,24 @@
+{% include 'common.html' %}
+
+<h3>
+books: {{ books }}
+</h3>
+
+<br/>
+
+<h1>
+{{ books[-1] }}
+</h1>
+
+<br/>
+
+<ul>
+    {% for book in books %}
+        <li>{{ book | capitalize }}</li>
+    {% endfor %}
+</ul>
+
+{% if 'python' in books %}
+    index of python in books: {{ books.index('python') }}
+{% endif %}
+
