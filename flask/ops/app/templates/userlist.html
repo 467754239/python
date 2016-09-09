@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block breadcrumb %} 
+用户列表
+{% endblock %}
+{% block main %} 
+
+<div class="col-sm-12">
+<a href="/add" class="btn btn-sm btn-primary "> 添加用户</a> 
+<table class="table table-striped table-bordered table-hover " id="editable">
+<thead>
+    <tr>
+        <th class="text-center">用户名</th>
+        <th class="text-center">姓名</th>
+        <th class="text-center">角色</th>
+        <th class="text-center">状态</th>
+        <th class="text-center">操作</th>
+    </tr>
+</thead>
+<tbody>
+   {% for user in users %}
+        <tr class="gradeX">
+                <td class="text-center"><a href="/userinfo?id={{user.id}}">{{user.name}}</a></td>
+                <td class="text-center">{{user.name_cn}}</td>
+                {% if user.role == "admin" %}
+                    <td class="text-center">超级管理员</td>
+                {% else %}
+                    <td class="text-center">管理员</td>
+                {% endif %}
+
+                {% if user.status == 0 %}
+                    <td class="text-center" style="color:green">正常</td>
+                {% else%}
+                    <td class="text-center" style="color:red">锁定</td>
+                {% endif %}
+
+                <td class="text-center">
+                    <button data-id="{{user.id}}" class="btn btn-xs btn-info update">编辑</button>
+                    <button data-id="{{user.id}}" class="btn btn-xs btn-danger del ">删除</button>
+                </td>
+            </td>
+         </tr>
+    {% endfor %}
+ </tbody>
+</table>
+
+<!--更新模态窗-->
+<div class="modal fade"  id ="updateModal">   
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">更新用户信息</h4>
+      </div>
+      <div class="modal-body">
+        <p>just a test</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">确认</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<script>
+$(".update").click(function(){   
+    //$('#updateModal').modal('hide')
+    $('#updateModal').modal('show')
+})
+
+
+/*删除用户*/
+$(".del").click(function(){
+    if(confirm("是否确认删除？")){
+        var id = $(this).attr('data-id')
+        var url = "/delete?id="+id
+        alert(url)
+        $.getJSON(url,function(data){
+            if (data['code']== 0 ){
+                alert (data["result"])
+                location.reload()
+            }else{
+                alert(data["errmsg"])
+            }
+        })
+    }  // end confirm
+})   
+</script>
+
+</div> <!--col-sm-12-->
+{% endblock %}
