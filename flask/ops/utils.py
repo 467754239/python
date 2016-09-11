@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import os
 import ConfigParser
 
-def config(section):
+def get_config(section):
     config_file = 'zhengys.conf'
     config = ConfigParser.ConfigParser()
     cur_dir = os.path.dirname(os.path.realpath(__file__))

@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 
 from app import app
 from dbMysql import dbmysql
-from utils import config
+from utils import get_config as config
 
 app.config.update(
     DEBUG = True,                                               # 是否开启debug调试模式.

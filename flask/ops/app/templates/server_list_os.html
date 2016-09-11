@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block breadcrumb %} 
+添加用户
+{% endblock %}
+{% block main %}
+
+<div id="tab_box">
+    <table class="table table-hover table-bordered table-condensed" style="font-size:12px;">
+      <thead class="scroll_head">
+        <tr >
+            <th>#</th>
+            <th>主机名</th>
+            <th>公有IP</th>
+            <th>内网IP</th>
+            <th>物理内存</th>
+            <th>虚拟内存</th>
+            <th>硬盘空间</th>
+            <th>CPU型号</th>
+            <th>逻辑CPU</th>
+            <th>系统类型</th>
+            <th>系统内核</th>
+            <th>制造商</th>
+            <th>产品名称</th>
+            <th>更新时间</th>
+        </tr>
+      </thead>
+      <tbody >
+            {% for server in data %}
+                <tr>
+                    <td> {{ loop.index }} </td>
+                    <td> {{ server.hostname }} </td>
+                    <td> {{ server.public_ip }} </td>
+                    <td> {{ server.private_ip }} </td>
+                    <td> {{ server.memtotal }} </td>
+                    <td> {{ server.swaptotal }} </td>
+                    <td> {{ server.disk_size }} </td>
+                    <td> {{ server.model_name }} </td>
+                    <td> {{ server.logic_cpu_num }} </td>
+                    <td> {{ server.os_type }} </td>
+                    <td> {{ server.os_kernel }} </td>
+                    <td> {{ server.manufacturer }} </td>
+                    <td> {{ server.product_name }} </td>
+                    <td> {{ server.update_datetime }} </td>
+                </tr>
+            {% endfor %}
+      </tbody>
+    </table>
+</div>
+
+<script>
+    $(function(){
+        var height = window.innerHeight * 0.3;
+        $("#tab_box").css('height',height)
+    })
+</script>
+
+{% endblock %}
