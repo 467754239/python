@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import time
 import json
+import hashlib
 from . import app
 from flask import Flask, request, session, render_template, redirect, url_for
-from dbMysql import dbmysql
+from utils import create_token, valid_token
 
 @app.route('/')
 @app.route('/index', methods=['GET'])
@@ -15,27 +17,32 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'GET':
-        return render_template('login.html')
-    elif request.method == 'POST':
+    if request.method == 'POST':
         # { k:v[0] for k, v in dict(request.form).items() }
         username = request.form.get('username')
         password = request.form.get('password')
-        app.logger.debug('username:%s, password:%s' % (username, password))
-        query_result = app.config['mysqlconn'].get_one_result(table_name='user', fields=['password', 'role'], where={'name' : username})
-        app.logger.debug('query result:%s.' % str(query_result))
+        if not username or not password:
+            print 2
+            return json.dumps({'code' : 1, 'errmsg' : 'your must input login username and password.'})
 
-        password_db = query_result.get('password', None)
-        role_name = query_result.get('role')
-
-        if not password_db:
+        query_result = app.config['mysqlconn'].get_one_result(table_name='user', fields=['password', 'role'], where={'name':username})
+        if not query_result:
             return json.dumps({'code' : 1, 'errmsg' : 'user not exists.'})
-        elif password != password_db:
-            return json.dumps({'code' : 1, 'errmsg' : 'password error.'})
 
-        session['username'] = username
-        session['role'] = role_name
-        return json.dumps({'code' : 0, 'result' : 'login sucessful.'})
+        if query_result.get('password') != hashlib.md5(password).hexdigest():
+            return json.dumps({'code' : 1, 'errmsg' : 'password error.'})
+        else:
+            data = {'last_login_time' : time.strftime('%Y-%m-%d %H:%M:%S')}
+            app.config['mysqlconn'].execute_update_sql(table_name='user', data=data, where={'name' : username})
+
+            role = query_result.get('role')
+            token = create_token(username, role, app.config['passport'])
+
+            decode_token_result = valid_token(token, app.config['passport'])
+            session['token'] = token
+            session['username'] = username
+            return json.dumps({'code' : 0, 'result' : 'login sucessful.'})
+    return render_template('login.html')
 
 @app.route('/logout', methods=['GET'])
 def logout():
@@ -113,3 +120,23 @@ def hostinfo():
             fields = ['public_ip', 'private_ip', 'memtotal', 'disk_size', 'logic_cpu_num', 'swaptotal', 'os_kernel', 'update_datetime', 'model_name', 'serial_number', 'os_type', 'product_name', 'manufacturer']
             app.config['mysqlconn'].execute_update_sql(table_name='server', data=data, fields=fields, where={'hostname' : hostname_list['hostname']})
     return '', 200
+
+@app.route('/update_msg', methods=['GET'])
+def update_msg():
+    name = request.args.get('name')
+    fields = ['id','name','name_cn','password','email','mobile','role','status']
+    query_result = app.config['mysqlconn'].get_one_result(table_name='user', fields=fields, where={'name' : name})
+    if session.get('role') == 'admin':
+        return json.dumps({'code' : 0, 'result' : query_result})
+    else:
+        return json.dumps({'code' : 2, 'result' : query_result})
+
+@app.route('/update', methods=['GET','POST'])
+def update():
+    if not session.get('username'):
+        return redirect(url_for('login'))
+
+    data = dict((k,v[0]) for k, v in dict(request.form).items())
+    name = data.get('name')
+    app.config['mysqlconn'].execute_update_sql(table_name='user', data=data, where={'name' : name})
+    return json.dumps({'code' : 0, 'result' : 'update completed.'})

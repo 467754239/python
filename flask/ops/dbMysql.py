@@ -56,7 +56,7 @@ class dbmysql(object):
 
     def get_one_result(self, table_name, fields=[], where=None):
         sql = self._select_sql(table_name, fields, where)
-        app.logger.debug('sql:%s' % sql)
+        app.logger.debug('sql:%s.' % sql)
         if sql:
             self._execute(sql)
             # return tuple
