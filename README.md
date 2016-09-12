@@ -3,7 +3,7 @@ Python 2.7
 [![Build Status](https://travis-ci.org/justjavac/free-programming-books-zh_CN.svg?branch=master)](https://travis-ci.org/justjavac/free-programming-books-zh_CN)
 
 ###### 基础
-*  [python2.7](./basic/python2.7.md)
+*  [python2.7](./python/basic/python2.7.md)
 *  [pip](./basic/pip.md)
 *  [ipython](./basic/ipython.md)
 *  [virtualenv](./basic/virtualenv.md)
