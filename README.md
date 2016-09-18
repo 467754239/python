@@ -29,6 +29,7 @@ Python 2.7
 * [optparse](http://467754239.blog.51cto.com/4878013/1619323)
 * [csv](./builtin_module/csv.md)
 * [collections](./builtin_module/collections.md)
+* [pdb](./builtin_module/pdb.md)
 * signal
 * re 
 * imp

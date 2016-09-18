@@ -1,0 +1,76 @@
+﻿1. 客户端把请求发送给Web服务器
+2. Web服务器再把请求发送给Flask程序实例
+3. 程序实例需要知道对每个URL请求运行哪些代码，所以保存了一个URL到Python函数的映射关系。处理URL和函数之间关系的程序称为路由。
+
+
+路由的功能就是用了装饰器
+
+
+函数注册为事件的处理程序.
+函数的返回值称为响应，是客户端接收到的内容.
+
+
+函数 称之为 视图函数 (view function)
+视图函数的作用就是为了生成请求响应.
+
+
+# URL映射的方式
+@app.route			# 装饰器的方式
+app.add_url_rule()		# 非装饰器形式生成映射.
+
+app.url_map # 保存了所有URL和视图的对应关系.
+
+
+
+render_template
+第一个参数是模板的文件名。
+随后的参数都是键值对，表示模板中变量对应的真实值。
+
+render_template('index.html', name=name)
+左边的name表示参数名，就是模板中使用的占位符；
+右边的name是当前作用域中的变量，表示同名参数的值。
+
+
+Jinja2 能识别所有类型的变量，甚至是一些复杂的类型，例如列表、字典和对象。
+支持过滤器 capitalize
+控制语句
+模板继承
+
+
+include		# 导入模板
+extends 	# 模板继承 声明这个模板衍生自哪个模板
+import		# 导入模板中的元素并用在多个模板中
+
+title		# 文档的头部
+navbar   	# 导航条
+content		# 主体内容
+
+基模板		# 最初的模板框架	（bootstrap/base.html）
+衍生模板	# 可以继承基模板并对其进行装饰.		（templates/base.html）
+
+衍生模板可以对基模板中的块重新定义.
+
+super()		# 衍生模板从基模板中获取原来的内容
+
+
+
+{{ username }}			# 表示一个变量
+{% 表达式(if | for ) %}		# 表达式
+{% endif %}
+{% endfor %}
+
+404		# 客户端请求未知页面或路由时显示
+500		# 有未处理的异常显示
+
+
+
+request.form	# 能获取POST请求中提交的表单数据.
+
+实现重定向和用户会话
+
+# 日志记录
+app.logger.debug
+app.logger.warning
+app.logger.error
+
+
