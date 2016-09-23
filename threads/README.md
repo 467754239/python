@@ -5,6 +5,17 @@
 - multiprocessing  
 - gevent
 
+## GIL ##
+```
+In CPython, the global interpreter lock, or GIL, is a mutex that prevents multiple native threads from executing 
+Python bytecodes at once. This lock is necessary mainly because CPython’s memory management is not thread-safe. 
+(However, since the GIL exists, other features have grown to depend on the guarantees that it enforces.)
+
+GIL(Global Interpreter Lock) 全局解释器锁 阻止Python.
+阻止原生线程并发执行Python字节码，因为cPython内存不是线程安全的。多线程序列化阻止它的并发.
+```
+
+
 ## 原理 ##
 ```
 # 核心
@@ -86,6 +97,25 @@ setDeamon(True)
 # join
 设置主线程是否同步阻塞自己来等待子线程执行完毕。如果不设置的话则主进程会继续执行自己的，
 在结束时根据 setDaemon 有无注册为守护模式的子进程，有的话将其回收，没有的话就结束自己，某些子线程可以仍在执行
+
+# 线程的join方法,正确的使用join方法.
+threads = []
+for x in xrange(8):
+    down = Downloader(queue)
+    threads.append(down)
+    down.start()
+
+for x in threads:
+    x.join()
+-> 这种方式正确.
+
+------------------
+for x in xrange(8):
+    down = Downloader(queue)
+    down.start()
+    down.join()
+-> 这种方式始终单线程在跑，是一种错误的方式.
+
 ```
 
 示例1  
@@ -156,6 +186,35 @@ if __name__ == '__main__':
     print 'main thread is over'
 ```
 
+> 计算机的任务有两种IO和计算
+
+```
+# 分类
+IO密集型   -> 有读有写，比如爬虫.
+计算密集型   -> 计算排序.
+
+# 阐释两类
+(1)为什么IO密集型能够利用多线程？
+下一个线程有效的利用了上一个线程的等待IO的时间，伪并发，要比单线程高很多.
+
+(2)计算密集型
+执行效率非常低
+CPU要比IO快很多很多，因此几乎没有等待上个线程的等待时间，创造线程还需要时间等.
+CPU密集型任务：多线程效率往往比单线程还低.
+
+(2.1) 解决密集型计算的方法
+1. 通过ctypes来解决，绕过了GIL的限制.
+2. 多进程的方式 multiprocessing
+```
+
+## multiprocessing
+```
+文件描述符 file descriptor
+在linux内，对所有设备或者文件的操作都是通过文件描述符进行的.
+
+多进程 主进程fork子进程 子进程继承主进程的文件描述符(文件位置、偏移量)
+```
+
 ## 协程 ##
 概念性
 ```
@@ -181,4 +240,5 @@ gevent给了你线程,但是没有使用线程
 ## 参考资料
 [Python 中的进程、线程、协程、同步、异步、回调](https://segmentfault.com/a/1190000001813992)  
 [gevent官方文档](http://www.gevent.org/contents.html)  
-[廖雪峰gevent](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001407503089986d175822da68d4d6685fbe849a0e0ca35000)
+[gevent](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001407503089986d175822da68d4d6685fbe849a0e0ca35000)
+[GIL](http://cenalulu.github.io/python/gil-in-python/)
