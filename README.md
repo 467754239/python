@@ -17,7 +17,7 @@ Python 2.7
 *  [生成器、迭代器](https://github.com/467754239/python/blob/master/basic/generator.md)
 *  [异常处理](https://github.com/467754239/python/blob/master/basic/exception.md)
 *  [实现switch](https://github.com/467754239/python/blob/master/basic/switch.md)
-*  [实用技巧](https://github.com/467754239/python/blob/master/basic/practical_skills.md)
+*  [实用技巧](./basic/practical_skills.md)
 *  [其它](https://github.com/467754239/python/blob/master/basic/other.md)
 
 ###### 内置模块
@@ -30,7 +30,7 @@ Python 2.7
 * [csv](./builtin_module/csv.md)
 * [collections](./builtin_module/collections.md)
 * [pdb](./builtin_module/pdb.md)
-* signal
+* [pty](./ppty.py)
 * re 
 * imp
     
