@@ -11,7 +11,7 @@ Python 2.7
 *  [推倒式](./basic/analytical.md)
 *  [函数式编程](./basic/function_program.md)
 *  [装饰器](./basic/decorate.md)
-*  [上下文管理器](./master/basic/context_manager.md)
+*  [上下文管理器](./basic/context_manager.md)
 *  [file与open](./basic/file.md)
 *  [file指针](./basic/file_pos.md)
 *  [生成器、迭代器](./basic/generator.md)
