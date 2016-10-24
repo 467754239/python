@@ -31,8 +31,7 @@ Python 2.7
 * [collections](./builtin_module/collections.md)
 * [pdb](./builtin_module/pdb.md)
 * [pty](./builtin_module/ppty.py)
-* re 
-* imp
+* [assert](./builtin_module/assert.py)
     
 ###### 第三方模块
 * [elasticsearch](./third_party_module/elasticsearch)
