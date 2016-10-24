@@ -37,6 +37,7 @@ Python 2.7
 ###### 第三方模块
 * [elasticsearch](./third_party_module/elasticsearch)
 * [requests](./third_party_module/requests_python.py)
+* [mysql](./third_party_module/mysql)
     
 ###### 实战应用
 * [脚本](./scripts)
