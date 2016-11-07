@@ -4,7 +4,7 @@ Python 2.7
 
 ###### 基础
 *  [python2.7](./basic/python2.7.md)
-*  [pip](.basic/pip.md)
+*  [pip](./basic/pip.md)
 *  [ipython](./basic/ipython.md)
 *  [virtualenv](./basic/virtualenv.md)
 *  [函数](./basic/function_program.md)
