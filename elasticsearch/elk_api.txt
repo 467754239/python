@@ -1,0 +1,162 @@
+﻿# -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+### elk ###
+
+> 核心  
+> elasticsearch api
+
+restful api
+   GET
+   PUT
+   POST
+   DELETE
+   HEAD
+   
+insert      -> database
+type        -> table
+document    -> row
+
+注意
+在这里json中单引号和双引号不能混用
+
+kibana插件sense可以对es的api进行操作.
+elasticsearch插件heard可以查看信息.
+
+es中分片一旦设置后后期就不能改了.
+
+(1) 全文检索
+GET _search
+{
+    "query" : {
+        "match_all" : {}
+    }
+}
+
+curl -XGET 'localhost:9200/_search?pretty'
+
+# 创建一个索引(库)
+$ curl -XPUT 'localhost:9200/tbs' -d '{
+  "settings": {
+         "index": {
+            "number_of_replicas": "0",
+            "number_of_shards": "5"
+          }
+  }
+}'
+
+# 查看索引信息
+$ curl -XGET 'localhost:9200/tbs?pretty'
+
+# 删除一个索引(库)
+$ curl -XDELETE 'localhost:9200/tbs'
+
+# 修改副本数(执行错误)
+$ curl -XPUT 'localhost:9200/tbs/_settings' -d '{
+    "index": {
+        "number_of_replicas": "2",
+        }
+}'
+
+======================查询========================
+# 查看所有索引信息
+$ curl -XGET 'localhost:9200/_cat/indices?v'
+$ curl -XGET 'localhost:9200/_all/_settings?pretty'
+
+# 查看一个索引信息
+$ curl -XGET 'localhost:9200/logstash-2016.07.28/_settings?pretty'
+
+# 查看多个索引信息
+$ curl -XGET 'localhost:9200/logstash-2016.07.28,logstash-2016.07.29/_settings?pretty'
+
+# 获取索引里面每个字段的数据类型
+$ curl -XGET 'localhost:9200/logstash-2016.07.28/_mappings?pretty'
+
+======================文档操作========================
+# 插入数据1
+$ curl -XPUT 'localhost:9200/tbs/books/1' -d '{
+  "title":"my book",
+  "author" : {
+        "first" : "zheng",
+        "last" : "yansheng"
+        },
+  "publish_date":"2015-02-06",
+  "price":"49.99"
+}' 
+
+# 插入数据2 (post方式插入数据不用指定id，而get方式需要指定id)
+$ curl -XPOST 'localhost:9200/tbs/books' -d '{
+  "title":"my book post",
+  "author" : {
+        "first" : "zheng post",
+        "last" : "yansheng"
+        },
+  "publish_date":"2015-02-06",
+  "price":"49.99"
+}'
+
+# 查看插入的数据
+$ curl 'localhost:9200/tbs/books/_search?q=*&pretty'
+$ curl -XGET 'localhost:9200/tbs/_search?pretty'
+
+# 删除类型(列)
+$ curl -XDELETE 'localhost:9200/tbs/books/1'
+$ curl -XDELETE 'localhost:9200/tbs/books/2'
+
+# 删除类型(表)       ===> 失败了
+$ curl -XDELETE 'localhost:9200/tbs/books'
+
+# 修改有两种方式
+（1）更新某一个列的值(某一行)
+
+（2）更新某一列具体字段的值
+$ curl -XPOST 'localhost:9200/tbs/books/1/_update' -d '{
+    "doc" : {
+        "price" : 50
+    }
+}'
+
+$ curl -XPOST 'localhost:9200/tbs/books/AVY_z-J2RCjjgGQOxQmM/_update' -d '{
+    "doc" : {
+        "title" : "baidu"
+    }
+}'
+
+POST /panda/books/1/_update
+{
+  "doc": {
+    "price":100
+  }
+}
+
+
+
+- 通过搜索的方式查看数据
+- 通过查询某一列的所有值及制定列的值
+$ curl -XGET 'localhost:9200/tbs/books/1?pretty'
+$ curl -XGET 'localhost:9200/tbs/books/1?_source=title'
+$ curl -XGET 'localhost:9200/tbs/books/1?_source=title,price'
+
+## 多条数据查询的两种方式
+
+# url不指定库和表
+curl -XGET 'localhost:9200/_mget?pretty' -d '{
+    "docs" : [
+        {
+            "_index" : "tbs",
+            "_type" : "books",
+            "_id" : "1"      
+        },
+        {
+            "_index" : "tbs",
+            "_type" : "books",
+            "_id" : "AVY_z-J2RCjjgGQOxQmM",
+            "_source": ["title", "price"]
+        }
+    ]
+}'
+
+# url指定库和表
+curl -XGET 'localhost:9200/tbs/books/_mget?pretty' -d '{
+    "ids" : ["1", "2"],
+    "_source": "title"
+}'
