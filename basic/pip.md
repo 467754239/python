@@ -48,7 +48,8 @@ EOF
 # pip install -r requirements.txt 
 ```
 
-7. pip自定义配置文件
+7 pip自定义配置文件
+
 ```
 $ vim /etc/pip.conf
 [global]
