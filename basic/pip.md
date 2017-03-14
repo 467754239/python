@@ -59,3 +59,5 @@ index-url = http://pypi.douban.com/simple
 [list]
 format=columns
 ```
+8 生成requirements.txt文件
+$ pip freeze >requirements.txt
