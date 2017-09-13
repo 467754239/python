@@ -38,7 +38,8 @@ Python 2.7
 * [requests](./third_party_module/requests/requests_python.py)
 * [mysql](./third_party_module/mysql)
 * [consul](./third_party_module/consul)
-    
+* [jira](./third_party_module/jira)
+    
 ###### 实战应用
 * [脚本](./scripts)
 * [工具包](./opstools)
