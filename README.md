@@ -44,7 +44,7 @@ Python 2.7
 * [scripts](./scripts)
 * [tools](./opstools)
 * [cap](./cap)
-* [多线程、多进程、协程](./threads)
+* [process、thread、coroutine](./threads)
 * [socket](./socket)
 * [algorithm](./algorithm)
 
