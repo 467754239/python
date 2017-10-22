@@ -18,6 +18,8 @@ Python 2.7
 * [异常处理](./basic/exception.md)
 * [实现switch](./basic/switch.md)
 * [实用技巧](./basic/practical_skills.md)
+* [range](./basic/range.md)
+* [xrange](./basic/xrange.md)
 * [其它](./basic/other.md)
 
 ###### 内置模块
