@@ -52,6 +52,7 @@ Python 2.7
 
 ###### Web框架
 * [Flask](./flask)
+* django 
 * tornado
 
 ###### 学习资料
