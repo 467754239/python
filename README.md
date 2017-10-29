@@ -41,6 +41,8 @@ Python 2.7
 * [mysql](./third_party_module/mysql)
 * [consul](./third_party_module/consul)
 * [jira](./third_party_module/jira)
+* [qrcode](./third_party_module/qrcode)
+
     
 ###### 实战应用
 * [scripts](./scripts)
