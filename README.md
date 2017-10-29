@@ -42,10 +42,12 @@ Python 2.7
 * [consul](./third_party_module/consul)
 * [jira](./third_party_module/jira)
 * [qrcode](./third_party_module/qrcode)
+* [ping](./third_party_module/ping)
 
     
 ###### 实战应用
 * [scripts](./scripts)
+* [wechat](./wechat)
 * [tools](./opstools)
 * [cap](./cap)
 * [process、thread、coroutine](./threads)
