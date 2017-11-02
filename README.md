@@ -43,6 +43,9 @@ Python 2.7
 * [jira](./third_party_module/jira)
 * [qrcode](./third_party_module/qrcode)
 * [ping](./third_party_module/ping)
+* [optparse](./third_party_module/optparse)
+* [pyinotify](./third_party_module/pyinotify)
+* [ConfigParser](./third_party_module/ConfigParser)
 
     
 ###### 实战应用
@@ -53,6 +56,9 @@ Python 2.7
 * [process、thread、coroutine](./threads)
 * [socket](./socket)
 * [algorithm](./algorithm)
+* [largeLog](./largelog)
+* [tail](./tail)
+* [token](./token)
 
 ###### Web框架
 * [Flask](./flask)
