@@ -1,7 +1,6 @@
 ## RESTFUL API客户端封装
 
 ```python
-import json
 
 import requests
 
@@ -76,16 +75,16 @@ class httpRequest(object):
 
 def _do(handler):
     if handler.status_code == 200:
-        return _parseException(handler.text), True
+        return _parseException(handler), True
     else:
-        return _parseException(handler.text), False
+        return _parseException(handler), False
 
 
-def _parseException(response):
+def _parseException(handler):
     try:
-        return json.loads(response)
+        return handler.json() 
     except ValueError as e:
-        return response
+        return handler.text
     except Exception as e:
         return e.args
 
