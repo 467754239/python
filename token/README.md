@@ -7,7 +7,7 @@ import os
 import time
 import base64
 
- secret_key = os.urandom(24)
+secret_key = os.urandom(24)
 
 '''生成token
 '''
