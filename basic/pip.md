@@ -2,7 +2,6 @@
 
 1 下载pip安装脚本
 ```
-# wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 # wget https://bootstrap.pypa.io/get-pip.py
 ```
 
