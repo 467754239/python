@@ -5,8 +5,8 @@
 Python 2.6.6
 
 安装依赖包
-# yum install gcc gcc-c++ make xz wget readline-devel
-# yum install python-devel openssl-devel zlib-devel
+# yum install gcc gcc-c++ make xz wget
+# yum install python-devel openssl-devel zlib-devel readline-devel
 
 下载
 # wget https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tar.xz
